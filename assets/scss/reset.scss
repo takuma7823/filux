@@ -1,0 +1,123 @@
+@charset "utf-8";
+/*---------------------------------------
+Reset Stylesheet
+v1.0.0
+----------------------------------------*/
+
+/*　
+Font-size
+9px  = 0.9rem   | 15px  = 1.5rem
+10px = 1rem (base)  | 16px  = 1.6rem
+11px = 1.1rem   | 17px  = 1.7rem
+12px = 1.2rem   | 18px  = 1.8rem
+13px = 1.3rem   | 19px  = 1.9rem
+14px = 1.4rem   | 20px  = 2rem
+　*/
+
+/* Reset */
+html,body,
+h1, h2, h3, h4, h5, h6,
+div, p, dl, dt, dd, ol, ul, li,
+span, a, strong, em, b, i, del, dfn, img, ins, kbd, q, samp, small, sub, sup, var,
+table, caption, tbody, tfoot, thead, tr, th, td,
+fieldset, form, label, legend,
+object, iframe, blockquote, pre, abbr, address, cite, code,
+article, aside, canvas, details, figcaption, figure,
+footer, header, main, menu, section, nav,
+time, mark, video, audio {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  font-size:  1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+  text-size-adjust: 100%;
+}
+
+/* Layout */
+html {
+  overflow-y: scroll;
+}
+header,
+main,
+menu,
+nav,
+section,
+article,
+aside,
+summary,
+details,
+figcaption,
+figure,
+footer {
+  display: block;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:focus {
+  outline: 0;
+}
+
+/* Elements */
+input,
+select,
+textarea,
+pre,
+button {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-family : inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  vertical-align: middle;
+  // -webkit-appearance:  none;
+}
+img {
+  border: 0;
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+}
+ul,
+ol {
+  list-style: none;
+}
+address {
+  font-style: normal;
+}
+input[type="button"],
+button,
+select {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  color: #000
+}

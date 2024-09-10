@@ -1,0 +1,23 @@
+$breakpoint: 750px;
+
+@mixin pc {
+  @media (min-width: ($breakpoint + 1px)), print {
+    @content;
+
+    // PC側で非表示
+    [data-device='sp'] {
+      display: none;
+    }
+  }
+}
+
+@mixin sp {
+  @media only screen and (max-width: ($breakpoint)) {
+    @content;
+
+    // SP側で非表示
+    [data-device='pc'] {
+      display: none;
+    }
+  }
+}

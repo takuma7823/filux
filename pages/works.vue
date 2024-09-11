@@ -314,6 +314,11 @@
       display: flex;
       flex-wrap: wrap;
       &_wrapper {
+        &:not(:nth-child(4n)) {
+          .works_cont_wrapper_card {
+            margin-right: 26.6px;
+          }
+        }
         &_card {
           margin-top: 40px;
           background-color: white;
@@ -340,11 +345,6 @@
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
             transform: translateY(-4px) scale(1.01);
             animation: floating 0.3s ease;
-          }
-        }
-        &:not(:nth-child(4n)) {
-          .works_cont_wrapper_card {
-            margin-right: 26.6px;
           }
         }
       }

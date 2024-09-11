@@ -1,8 +1,9 @@
 <script setup lang="ts">
 
+  const router = useRouter()
+
   const currentVideoIndex = ref(0)
   const videoPlayer = ref<HTMLVideoElement | null>(null)
-  const youtubeEmbedUrl = ref('https://www.youtube.com/embed/4X6dx3lh9fk')
 
   const videos = [
     '/videos/white.mp4',
@@ -67,6 +68,11 @@
     }
     
   }
+
+  const changePage = (id: string) => {
+    router.push(id)
+  }
+
 </script>
 
 <template>
@@ -128,7 +134,7 @@
           </div>
         </div>
         <div class="works_btn">
-          <button>
+          <button @click="changePage('works')">
             View ALL >>
           </button>
         </div>
@@ -145,6 +151,49 @@
           テキストテキストテキストテキストテキストテキストテキステキストテキストテキストテキスト明テキストテキストテキストテキスト<br>
           テキストテキストテキストテキストテキストテキストテキストテキストテストテキストテキストテキストテキストテキストテキストテキスト説<br>
           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </div>
+      </div>
+      <div class="partner">
+        <h3 class="partner_label">
+          Partner
+        </h3>
+        <div class="partner_cont">
+          <div class="partner_cont_card">
+            <div class="partner_cont_card_img">
+              <div class="partner_cont_card_img_label">Shooting Assistant</div>
+            </div>
+            <div class="partner_cont_card_txt">撮影アシスタント</div>
+          </div>
+          <div class="partner_cont_card">
+            <div class="partner_cont_card_img">
+              <div class="partner_cont_card_img_label">Hair Make up/Stylist</div>
+            </div>
+            <div class="partner_cont_card_txt">ヘアメイク・スタイリスト</div>
+          </div>
+          <div class="partner_cont_card">
+            <div class="partner_cont_card_img">
+              <div class="partner_cont_card_img_label">Animation/Illustrator</div>
+            </div>
+            <div class="partner_cont_card_txt">アニメーション/イラストレーター</div>
+          </div>
+          <div class="partner_cont_card">
+            <div class="partner_cont_card_img">
+              <div class="partner_cont_card_img_label">Casting</div>
+            </div>
+            <div class="partner_cont_card_txt">キャスティング</div>
+          </div>
+          <div class="partner_cont_card">
+            <div class="partner_cont_card_img">
+              <div class="partner_cont_card_img_label">Shooting Assistant</div>
+            </div>
+            <div class="partner_cont_card_txt">撮影アシスタント</div>
+          </div>
+          <div class="partner_cont_card">
+            <div class="partner_cont_card_img">
+              <div class="partner_cont_card_img_label">Shooting Assistant</div>
+            </div>
+            <div class="partner_cont_card_txt">撮影アシスタント</div>
+          </div>
         </div>
       </div>
     </div>
@@ -174,7 +223,7 @@
     }
   }
   .message {
-    padding: 50px;
+    padding: 120px 0;
     text-align: center;
     &_label {
       margin: 0 auto;
@@ -202,8 +251,10 @@
   }
   .works {
     margin: 0 auto;
-    padding: 40px;
-    width: 1240px;
+    padding: 120px 0;
+    width: 100%;
+    background-color: black;
+    color: white;
     &_label {
       margin: 0 auto;
       padding-bottom: 4px;
@@ -220,6 +271,8 @@
       justify-content: space-between;
       &_card {
         margin-top: 40px;
+        background-color: white;
+        color: black;
         iframe {
           width: 364px;
           height: 205px;
@@ -239,32 +292,33 @@
           }
         }
         &:hover {
-          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2);
           transform: translateY(-4px) scale(1.01);
           animation: floating 0.3s ease;
         }
       }
     }
     &_btn {
-      margin-top: 40px;
+      margin-top: 70px;
       display: flex;
       justify-content: center;
       button {
         border: 1px solid;
         padding: 8px 24px;
         font-size: 1.8rem;
+        color: white;
       }
     }
   }
   .why {
     margin: 0 auto;
-    padding: 40px 0 120px;
+    padding: 120px 0;
     width: 1240px;
     text-align: center;
     &_label {
       margin: 0 auto;
       padding-bottom: 4px;
-      width: 120px;
+      width: 100px;
       text-align: center;
       font-size: 4rem;
       border-bottom: 1px solid;
@@ -277,6 +331,86 @@
       margin-top: 12px;
       font-size: 1.6rem;
       line-height: 1.6;
+    }
+  }
+  .partner {
+    margin: 0 auto;
+    padding: 120px 0 200px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    &_label {
+      margin: 0 auto;
+      padding-bottom: 4px;
+      width: 140px;
+      text-align: center;
+      font-size: 4rem;
+      border-bottom: 1px solid;
+    }
+    &_cont {
+      margin: 20px auto 0;
+      width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &_card {
+        margin-top: 30px;
+        &_img {
+          border-radius: 8px;
+          width: 364px;
+          height: 140px;
+          background-repeat: no-repeat;
+          background-size: 364px, 140px;
+          position: relative;
+          &_label {
+            margin: auto;
+            position: absolute;
+            top: 55px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          }
+        }
+        &_txt {
+          margin-top: 8px;
+          text-align: left;
+          font-size: 1.4rem;
+        }
+        &:nth-child(1) {
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/shooting.jpeg');
+          }
+        }
+        &:nth-child(2) {
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/hairMake.jpeg');
+          }
+        }
+        &:nth-child(3) {
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/animater.jpeg');
+          }
+        }
+        &:nth-child(4) {
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/shooting.jpeg');
+          }
+        }
+        &:nth-child(5) {
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/hairMake.jpeg');
+          }
+        }
+        &:nth-child(6) {
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/animater.jpeg');
+          }
+        }
+      }
     }
   }
   @keyframes floating {

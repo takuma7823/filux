@@ -1,3 +1,13 @@
+<script lang="ts" setup>
+
+  const router = useRouter()
+
+  const changePage = (id: string) => {
+    router.push(id)
+  }
+
+</script>
+
 <template>
   <header class="header">
     <div class="header_cont">
@@ -5,19 +15,16 @@
         <div class="header_cont_left_img" />
       </div>
       <ul class="header_cont_right">
-        <li>
+        <li @click="changePage('/')">
           Home
         </li>
-        <li>
+        <li @click="changePage('/works')">
           Works
         </li>
-        <li>
+        <li @click="changePage('/services')">
           Services
         </li>
-        <li>
-          Members
-        </li>
-        <li>
+        <li @click="changePage('/contact')">
           Contact
         </li>
       </ul>
@@ -54,7 +61,7 @@
         width: 60%;
         font-size: 1.8rem;
         display: flex;
-        justify-content: flex-start;;
+        justify-content: right;
         align-items: center;
         li {
           margin-right: 40px;

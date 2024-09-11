@@ -266,6 +266,57 @@
       <h3 class="sns_label">
         SNS実績
       </h3>
+      <div class="sns_cont">
+        <iframe
+          :src="'https://www.youtube.com/embed/4X6dx3lh9fk'"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+        <div class="sns_cont_wrapper"> 
+          <div class="sns_cont_wrapper_ttl">
+            〇〇者様 採用向けパーパスムービー
+          </div>
+          <div class="sns_cont_wrapper_txt">
+            採用向け動画を制作し、採用数が5倍に増加や10人以上増えたといったお声も頂いております。
+          </div>
+        </div>
+      </div>
+      <div class="sns_cont">
+        <iframe
+          :src="'https://www.youtube.com/embed/4X6dx3lh9fk'"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+        <div class="sns_cont_wrapper"> 
+          <div class="sns_cont_wrapper_ttl">
+            〇〇者様 採用向けパーパスムービー
+          </div>
+          <div class="sns_cont_wrapper_txt">
+            採用向け動画を制作し、採用数が5倍に増加や10人以上増えたといったお声も頂いております。
+          </div>
+        </div>
+      </div>
+      <div class="sns_cont">
+        <iframe
+          :src="'https://www.youtube.com/embed/4X6dx3lh9fk'"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+        <div class="sns_cont_wrapper"> 
+          <div class="sns_cont_wrapper_ttl">
+            〇〇者様 採用向けパーパスムービー
+          </div>
+          <div class="sns_cont_wrapper_txt">
+            採用向け動画を制作し、採用数が5倍に増加や10人以上増えたといったお声も頂いております。
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -351,17 +402,34 @@
     }
   }
   .sns {
-    margin: 0 auto;
-    padding: 60px;
-    width: 100%;
-    color: black;
+    margin: 60px auto 120px;
+    padding: 60px 0;
+    width: 1200px;
     &_label {
-      margin: 0 auto;
+      margin: 0 auto 40px;
       padding-bottom: 4px;
       width: 170px;
       text-align: center;
       font-size: 4rem;
       border-bottom: 1px solid;
+    }
+    &_cont {
+      margin: 0 auto;
+      border-bottom: 1px solid;
+      padding: 40px 0;
+      display: flex;
+      justify-content: space-between;
+      &_wrapper {
+        width: 70%;
+        text-align: left;
+        &_ttl {
+          margin-top: 12px;
+          font-size: 2rem;
+        }
+        &_txt {
+          margin-top: 12px;
+        }
+      }
     }
   }
   @keyframes floating {

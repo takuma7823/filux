@@ -9,7 +9,7 @@
         One-stop video creation
       </h3>
       <h4 class="services_subLabel">
-        企画から制作までワンストップで
+        企画・制作から運用までワンストップで
       </h4>
       <ul class="services_icon">
         <li class="services_icon_item">
@@ -34,6 +34,12 @@
           <div class="border">
             <div class="services_icon_item_label">Edit</div>
             <div class="services_icon_item_subLabel">編集</div>
+          </div>
+        </li>
+        <li class="services_icon_item">
+          <div class="border">
+            <div class="services_icon_item_label">Management</div>
+            <div class="services_icon_item_subLabel">運用</div>
           </div>
         </li>
       </ul>
@@ -88,6 +94,75 @@
         </div>
       </div>
     </div>
+    <div class="shooting">
+      <div class="shooting_cont">
+        <h3 class="shooting_cont_label">
+          Shooting
+        </h3>
+        <h4 class="shooting_cont_subLabel">
+          撮影
+        </h4>
+        <div class="shooting_cont_exp">
+          <div class="shooting_cont_exp_txt"> 
+            企画が決まれば、プロフェッショナルな撮影チームが<br>
+            最新の機材を用いて映像を撮影します。<br>
+            多様なジャンルに対応できる撮影技術を持ち、<br>
+            スタジオ撮影からロケーション撮影まで、<br>
+            お客様のご要望に合わせた撮影を行います。<br>
+            映像のクオリティにこだわり、細部にまで目を向けた<br>
+            美しい映像を提供します。<br>
+            撮影中もお客様と密に連携を取りながら、<br>
+            スムーズな進行を心がけています。
+          </div>
+          <div class="shooting_cont_exp_img" />
+        </div>
+      </div>
+    </div>
+    <div class="edit">
+      <div class="edit_cont">
+        <h3 class="edit_cont_label">
+          Edit
+        </h3>
+        <h4 class="edit_cont_subLabel">
+          編集
+        </h4>
+        <div class="edit_cont_exp">
+          <div class="edit_cont_exp_img" />
+          <div class="edit_cont_exp_txt"> 
+            撮影後、編集チームが映像を一貫して仕上げます。<br>
+            映像編集はただカットするだけではなく、ストーリー性を強調し、<br>
+            視聴者を引き込む効果を高めることを目指します。<br>
+            カラーグレーディングや音声処理、BGMや効果音の追加など、<br>
+            細部にこだわった編集作業を通して、完成度の高い作品に仕上げます。<br>
+            お客様との確認を繰り返しながら、納得のいく映像をご提供いたします。
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="management">
+      <div class="management_cont">
+        <h3 class="management_cont_label">
+          Management
+        </h3>
+        <h4 class="management_cont_subLabel">
+          運用
+        </h4>
+        <div class="management_cont_exp">
+          <div class="management_cont_exp_txt"> 
+            動画制作後の運用は、コンテンツが最大限の効果を発揮するために<br>
+            重要なステップです。当社では、SNS運用や広告配信などを含む<br>
+            総合的な運用サービスを提供しています。<br>
+            適切なプラットフォームでの配信、ターゲティング、<br>
+            パフォーマンス分析を通じて、視聴者にリーチし、<br>
+            最適な成果を実現します。<br>
+            特にSNS運用では、定期的なコンテンツ投稿や<br>
+            インタラクションの管理により、ブランドの存在感を高め、<br>
+            視聴者とのエンゲージメントを強化します。
+          </div>
+          <div class="management_cont_exp_img" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -98,7 +173,7 @@
 
 @include mq.pc {
   .page {
-    padding: 71px 0 160px;
+    padding: 71px 0 0;
     width: 100%;
   }
   .services {
@@ -132,11 +207,11 @@
       &_item {
         border: 1px solid;
         padding: 6px;
-        width: 280px;
-        height: 230px;
+        width: 224px;
+        height: 224px;
         text-align: center;
-        &:not(:nth-child(4n)) {
-          margin-right: 26.6px;
+        &:not(:nth-child(5)) {
+          margin-right: 20px;
         }
         &_label {
           margin-top: 70px;
@@ -218,6 +293,119 @@
           width: 500px;
           height: 260px;
           background-image: url('@/assets/img/proposal.jpeg');
+          background-repeat: no-repeat;
+          background-size: 600px, 220px;
+        }
+      }
+    }
+  }
+  .shooting {
+    padding: 120px 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    &_cont {
+      margin: 0 auto;
+      width: 1200px;
+      &_label {
+        padding-bottom: 4px;
+        width: 160px;
+        font-size: 4rem;
+        border-bottom: 1px solid;
+      }
+      &_subLabel {
+        margin-top: 12px;
+        font-size: 2rem;
+      }
+      &_exp {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        &_txt {
+          width: 50%;
+          line-height: 1.6;
+          font-size: 1.8rem;
+        }
+        &_img {
+          border: 1px solid white;
+          width: 500px;
+          height: 260px;
+          background-image: url('@/assets/img/shoot.jpeg');
+          background-repeat: no-repeat;
+          background-size: 600px, 220px;
+        }
+      }
+    }
+  }
+  .edit {
+    padding: 120px 0;
+    width: 100%;
+    &_cont {
+      margin: 0 auto;
+      width: 1200px;
+      &_label {
+        padding-bottom: 4px;
+        width: 70px;
+        font-size: 4rem;
+        border-bottom: 1px solid;
+      }
+      &_subLabel {
+        margin-top: 12px;
+        font-size: 2rem;
+      }
+      &_exp {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        &_txt {
+          width: 50%;
+          line-height: 1.6;
+          font-size: 1.8rem;
+          text-align: left;
+        }
+        &_img {
+          border: 1px solid black;
+          width: 500px;
+          height: 260px;
+          background-image: url('@/assets/img/edit.jpeg');
+          background-repeat: no-repeat;
+          background-size: 600px, 220px;
+        }
+      }
+    }
+  }
+  .management {
+    padding: 120px 0 240px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    &_cont {
+      margin: 0 auto;
+      width: 1200px;
+      &_label {
+        padding-bottom: 4px;
+        width: 236px;
+        font-size: 4rem;
+        border-bottom: 1px solid;
+      }
+      &_subLabel {
+        margin-top: 12px;
+        font-size: 2rem;
+      }
+      &_exp {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        &_txt {
+          width: 50%;
+          line-height: 1.6;
+          font-size: 1.8rem;
+        }
+        &_img {
+          border: 1px solid white;
+          width: 500px;
+          height: 260px;
+          background-image: url('@/assets/img/management.jpeg');
           background-repeat: no-repeat;
           background-size: 600px, 220px;
         }

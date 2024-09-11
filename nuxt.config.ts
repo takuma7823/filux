@@ -17,6 +17,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      title: 'filux | 動画制作',
       link: [
         {
           rel: "preconnect",

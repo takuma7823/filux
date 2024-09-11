@@ -1,12 +1,12 @@
 <template>
   <footer>
     <div class="footer-container">
-      <ul>
+      <!-- <ul>
         <li><a href="#">ホーム</a></li>
         <li><a href="#">サービス</a></li>
         <li><a href="#">お問い合わせ</a></li>
         <li><a href="#">プライバシーポリシー</a></li>
-      </ul>
+      </ul> -->
 
       <div class="social-icons">
         <a href="#" title="Facebook">F</a>

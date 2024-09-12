@@ -6,57 +6,59 @@
   const videoPlayer = ref<HTMLVideoElement | null>(null)
 
   const videos = [
-    '/videos/white.mp4',
-    '/videos/interview.mp4',
+    '/videos/main.mp4',
   ] 
 
   const youtubeIds = [
     {
-      id:  '4X6dx3lh9fk',
-      ttl: '白ホリ Portrait Movie',
+      id:  'CA8XnL8Dz4c',
+      ttl: 'みそる-ヒカル×バンから',
       tags: [
-        'エンタメ',
-        'ポートレート'
-      ]
+        'プロモーション',
+      ],
+      txt: 'みそる プロモーション動画',
     },
     {
-      id:  'bvJ7MVv7jRg',
-      ttl: 'Hard Rock Cafe ライブ撮影',
+      id:  'XKOw60Hr_hw',
+      ttl: 'and group 2024 promotion video',
       tags: [
-        'エンタメ',
-        'ライブ撮影'
-      ]
+        'プロモーション',
+      ],
+      txt: '「&」高円寺店様 プロモーション映像',
     },
     {
-      id:  'COpXo1bDXug',
-      ttl: 'Tokyo Station Portrait Movie',
+      id:  'goetf6WsZRY',
+      ttl: 'TEASOBI - チェリら',
       tags: [
-        'エンタメ',
-        'ポートレート'
-      ]
+        'MV',
+      ],
+      txt: 'TEASOBI様 ミュージックビデオ',
     },
     {
-      id:  '/EPeyiZwET3E',
-      ttl: 'Japan Hot Cocktail Fair',
+      id:  'HaeakAetO-o',
+      ttl: 'ALBA LAB branding movie',
       tags: [
-        'エンタメ',
-        'web広告'
-      ]
+        'WEB広告',
+      ],
+      txt: 'ALBA LAB様 ブランディング動画',
     },
     {
-      id:  'R8udefSc_-c',
-      ttl: '春音楽祭',
+      id:  'QqyAAPF6W44',
+      ttl: '株式会社OBS staff interview',
       tags: [
-        'エンタメ',
-      ]
+        'インタビュー',
+        'プロモーション',
+      ],
+      txt: '株式会社OBS様 インタビュー動画',
     },
     {
-      id:  'Fa4jXd8ZkhA',
-      ttl: 'Tokyo Station Portrait Movie',
+      id:  'JdXZCzTMaU8',
+      ttl: '株式会社アーツ staff interview',
       tags: [
-        'エンタメ',
-        'パーパス'
-      ]
+        'インタビュー',
+        'プロモーション',
+      ],
+      txt: '株式会社アーツ様 会社紹介動画'
     },
   ]
 
@@ -131,6 +133,9 @@
               >
                 <span>{{ tag }}</span>
               </div>
+            </div>
+            <div class="works_cont_card_txt">
+              {{ card.txt }}
             </div>
           </div>
         </div>
@@ -216,15 +221,15 @@
           </div>
           <div class="partner_cont_card">
             <div class="partner_cont_card_img">
-              <div class="partner_cont_card_img_label">Shooting Assistant</div>
+              <div class="partner_cont_card_img_label">LINE Marketer</div>
             </div>
-            <div class="partner_cont_card_txt">撮影アシスタント</div>
+            <div class="partner_cont_card_txt">LINEマーケター</div>
           </div>
           <div class="partner_cont_card">
             <div class="partner_cont_card_img">
-              <div class="partner_cont_card_img_label">Shooting Assistant</div>
+              <div class="partner_cont_card_img_label">HP Production</div>
             </div>
-            <div class="partner_cont_card_txt">撮影アシスタント</div>
+            <div class="partner_cont_card_txt">ホームページ制作</div>
           </div>
         </div>
       </div>
@@ -310,18 +315,24 @@
           height: 205px;
         }
         &_ttl {
-          padding: 6px;
+          margin-top: 6px;
+          padding: 0 10px;
           font-size: 1.8rem;
         }
         &_tags {
-          padding: 6px 6px 16px;
+          margin-top: 12px;
+          padding: 0 10px;
           display: flex;
           span {
             margin-right: 4px;
-            padding: 6px 19px;
+            padding: 6px 10px;
             font-size: 1.3rem;
             background-color: #d9d9d9;
           }
+        }
+        &_txt {
+          margin: 12px 0 12px;
+          padding: 0 10px;
         }
         &:hover {
           box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2);
@@ -488,17 +499,17 @@
         }
         &:nth-child(4) {
           .partner_cont_card_img {
-            background-image: url('@/assets/img/shooting.jpeg');
+            background-image: url('@/assets/img/casting.jpeg');
           }
         }
         &:nth-child(5) {
           .partner_cont_card_img {
-            background-image: url('@/assets/img/hairMake.jpeg');
+            background-image: url('@/assets/img/LINE.jpeg');
           }
         }
         &:nth-child(6) {
           .partner_cont_card_img {
-            background-image: url('@/assets/img/animater.jpeg');
+            background-image: url('@/assets/img/HP.jpeg');
           }
         }
       }

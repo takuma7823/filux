@@ -4,203 +4,305 @@
 
   const youtubeIds = [
     {
-      id:  '4X6dx3lh9fk',
-      ttl: '白ホリ Portrait Movie',
+      id:  'CA8XnL8Dz4c',
+      ttl: 'みそる-ヒカル×バンから',
       tags: [
-        'エンタメ',
-        'ポートレート'
-      ]
+        'プロモーション',
+      ],
+      txt: 'みそる プロモーション動画',
     },
     {
-      id:  'bvJ7MVv7jRg',
-      ttl: 'Hard Rock Cafe ライブ撮影',
+      id:  'XKOw60Hr_hw',
+      ttl: 'and group 2024 promotion video',
       tags: [
-        'エンタメ',
-        'ライブ撮影'
-      ]
+        'プロモーション',
+      ],
+      txt: '「&」高円寺店様 プロモーション映像',
     },
     {
-      id:  'COpXo1bDXug',
-      ttl: 'Tokyo Station Portrait Movie',
+      id:  '8jz46UXKJew',
+      ttl: 'HAIR & BEAUTY 「&」 staff interview',
       tags: [
-        'エンタメ',
-        'ポートレート'
-      ]
+        'インタビュー',
+        'プロモーション',
+      ],
+      txt: '「&」高円寺店様 採用動画',
     },
     {
-      id:  '/EPeyiZwET3E',
-      ttl: 'Japan Hot Cocktail Fair',
+      id:  'QqyAAPF6W44',
+      ttl: '株式会社OBS staff interview',
       tags: [
-        'エンタメ',
-        'web広告'
-      ]
+        'インタビュー',
+        'プロモーション',
+      ],
+      txt: '株式会社OBS様 インタビュー動画',
     },
     {
-      id:  'R8udefSc_-c',
-      ttl: '春音楽祭',
+      id:  'IE8tfk0hZb8',
+      ttl: 'RechaLu staff interview',
       tags: [
-        'エンタメ',
-      ]
+        'インタビュー',
+        'プロモーション',
+      ],
+      txt: 'RechaLu様 採用動画',
     },
     {
-      id:  'Fa4jXd8ZkhA',
-      ttl: 'Tokyo Station Portrait Movie',
+      id:  'JdXZCzTMaU8',
+      ttl: '株式会社アーツ staff interview',
       tags: [
-        'エンタメ',
-        'パーパス'
-      ]
+        'インタビュー',
+        'プロモーション',
+      ],
+      txt: '株式会社アーツ様 会社紹介動画'
     },
     {
-      id:  '4X6dx3lh9fk',
-      ttl: '白ホリ Portrait Movie',
+      id:  '6TqSqMUkrKA',
+      ttl: '福耳会 branding movie',
       tags: [
-        'エンタメ',
-        'ポートレート'
-      ]
+        'インタビュー',
+        'プロモーション',
+      ],
+      txt: '福耳会様 ブランディング動画'
     },
     {
-      id:  'bvJ7MVv7jRg',
-      ttl: 'Hard Rock Cafe ライブ撮影',
+      id:  'fCJGaM2bEYo',
+      ttl: 'WPT OSAKA 2024 FINAL MOVIE',
       tags: [
-        'エンタメ',
-        'ライブ撮影'
-      ]
+        'プロモーション',
+      ],
+      txt: 'WPT OSAKA 2024 ブランディング動画'
     },
     {
-      id:  'COpXo1bDXug',
-      ttl: 'Tokyo Station Portrait Movie',
+      id:  'pAwtYrx3irw',
+      ttl: '佐埜めるの - アイドル♥最強宣言',
       tags: [
-        'エンタメ',
-        'ポートレート'
-      ]
+        'MV',
+      ],
+      txt: '佐埜めるの様 ミュージックビデオ',
     },
     {
-      id:  '/EPeyiZwET3E',
-      ttl: 'Japan Hot Cocktail Fair',
+      id:  'gxsqizlOAls',
+      ttl: 'dbs - 星',
       tags: [
-        'エンタメ',
-        'web広告'
-      ]
+        'MV',
+      ],
+      txt: 'dbs様 ミュージックビデオ',
     },
     {
-      id:  'R8udefSc_-c',
-      ttl: '春音楽祭',
+      id:  'weCqAog5FBs',
+      ttl: 'dbs - クローゼット',
       tags: [
-        'エンタメ',
-      ]
+        'MV',
+      ],
+      txt: 'dbs様 ミュージックビデオ',
     },
     {
-      id:  'Fa4jXd8ZkhA',
-      ttl: 'Tokyo Station Portrait Movie',
+      id:  'PD4RXaITnkw',
+      ttl: 'TEASOBI - HIMAWARI',
       tags: [
-        'エンタメ',
-        'パーパス'
-      ]
+        'MV',
+      ],
+      txt: 'TEASOBI様 ミュージックビデオ',
+    },
+    {
+      id:  'bF67xSLct2c',
+      ttl: 'Yvng Patra - 4 MY CUL',
+      tags: [
+        'MV',
+      ],
+      txt: 'Yvng Patra様 ミュージックビデオ',
+    },
+    {
+      id:  'eBe8rzL9NWs',
+      ttl: '「GOEN」アプリ ',
+      tags: [
+        'WEB広告',
+      ],
+      txt: 'ZEN Integration様 WEB広告',
+    },
+    {
+      id:  'mJy9bvx0Tag',
+      ttl: 'RIU DOMURA - SECOND SCENE',
+      tags: [
+        'MV',
+      ],
+      txt: 'RIU DOMURA様 ミュージックビデオ',
+    },
+    {
+      id:  'YifSfQm1UVs',
+      ttl: 'S.I. - 幸せのカタチ',
+      tags: [
+        'MV',
+      ],
+      txt: 'S.I.様 ミュージックビデオ',
+    },
+    {
+      id:  '0jeXFUc-0Qk',
+      ttl: 'RechaLu branding movie',
+      tags: [
+        'プロモーション',
+      ],
+      txt: 'RechaLu様 ブランディング動画',
+    },
+    {
+      id:  '5Oem7annHVk',
+      ttl: 'Growth Cup Kanagawa U-15 2023',
+      tags: [
+        'プロモーション',
+      ],
+      txt: 'Growth Cup Kanagawa ブランディング動画',
+    },
+    {
+      id:  'TZRk3RRiaVg',
+      ttl: '【家族で使える！全身用保湿クリーム】アベンヌ トリクセラNT フルイドシリーズで、乾燥に負けない肌を育む',
+      tags: [
+        'WEB広告',
+      ],
+      txt: 'AveneJapan様 WEB広告',
+    },
+    {
+      id:  'HaeakAetO-o',
+      ttl: 'ALBA LAB branding movie',
+      tags: [
+        'WEB広告',
+      ],
+      txt: 'ALBA LAB様 ブランディング動画',
+    },
+    {
+      id:  'goetf6WsZRY',
+      ttl: 'TEASOBI - チェリら',
+      tags: [
+        'MV',
+      ],
+      txt: 'TEASOBI様 ミュージックビデオ',
+    },
+    {
+      id:  'b84rf8kS2PM',
+      ttl: 'ハイエナカー - とけないハート',
+      tags: [
+        'MV',
+      ],
+      txt: 'ハイエナカー様 ミュージックビデオ',
+    },
+    {
+      id:  'bkQ1dypUZaM',
+      ttl: 'Hard Rock Cafe - THE TOMBOYS',
+      tags: [
+        'ライブ映像',
+      ],
+      txt: 'Hard Rock Cafe ライブ映像',
     },
   ]
+
   const categories = [
     'ALL',
-    'エンタメ',
-    'ポートレート',
-    'ライブ撮影',
-    'web広告',
-    'パーパス',
+    'インタビュー',
+    'MV',
+    'WEB広告',
+    'プロモーション',
+    'ライブ映像',
   ]
 
   const currentIds = ref([
     {
-      id:  '4X6dx3lh9fk',
-      ttl: '白ホリ Portrait Movie',
+      id:  'CA8XnL8Dz4c',
+      ttl: 'みそる-ヒカル×バンから',
       tags: [
-        'エンタメ',
-        'ポートレート'
-      ]
+        'プロモーション',
+      ],
+      txt: 'みそる プロモーション動画',
     },
     {
-      id:  'bvJ7MVv7jRg',
-      ttl: 'Hard Rock Cafe ライブ撮影',
+      id:  'XKOw60Hr_hw',
+      ttl: 'and group 2024 promotion video',
       tags: [
-        'エンタメ',
-        'ライブ撮影'
-      ]
+        'プロモーション',
+      ],
+      txt: '「&」高円寺店様 プロモーション映像',
     },
     {
-      id:  'COpXo1bDXug',
-      ttl: 'Tokyo Station Portrait Movie',
+      id:  'goetf6WsZRY',
+      ttl: 'TEASOBI - チェリら',
       tags: [
-        'エンタメ',
-        'ポートレート'
-      ]
+        'MV',
+      ],
+      txt: 'TEASOBI様 ミュージックビデオ',
     },
     {
-      id:  '/EPeyiZwET3E',
-      ttl: 'Japan Hot Cocktail Fair',
+      id:  'HaeakAetO-o',
+      ttl: 'ALBA LAB branding movie',
       tags: [
-        'エンタメ',
-        'web広告'
-      ]
+        'WEB広告',
+      ],
+      txt: 'ALBA LAB様 ブランディング動画',
     },
     {
-      id:  'R8udefSc_-c',
-      ttl: '春音楽祭',
+      id:  'QqyAAPF6W44',
+      ttl: '株式会社OBS staff interview',
       tags: [
-        'エンタメ',
-      ]
+        'インタビュー',
+        'プロモーション',
+      ],
+      txt: '株式会社OBS様 インタビュー動画',
     },
     {
-      id:  'Fa4jXd8ZkhA',
-      ttl: 'Tokyo Station Portrait Movie',
+      id:  'JdXZCzTMaU8',
+      ttl: '株式会社アーツ staff interview',
       tags: [
-        'エンタメ',
-        'パーパス'
-      ]
+        'インタビュー',
+        'プロモーション',
+      ],
+      txt: '株式会社アーツ様 会社紹介動画'
     },
     {
-      id:  '4X6dx3lh9fk',
-      ttl: '白ホリ Portrait Movie',
+      id:  'IE8tfk0hZb8',
+      ttl: 'RechaLu staff interview',
       tags: [
-        'エンタメ',
-        'ポートレート'
-      ]
+        'インタビュー',
+        'プロモーション',
+      ],
+      txt: 'RechaLu様 採用動画',
     },
     {
-      id:  'bvJ7MVv7jRg',
-      ttl: 'Hard Rock Cafe ライブ撮影',
+      id:  '6TqSqMUkrKA',
+      ttl: '福耳会 branding movie',
       tags: [
-        'エンタメ',
-        'ライブ撮影'
-      ]
+        'インタビュー',
+        'プロモーション',
+      ],
+      txt: '福耳会様 ブランディング動画'
     },
     {
-      id:  'COpXo1bDXug',
-      ttl: 'Tokyo Station Portrait Movie',
+      id:  'pAwtYrx3irw',
+      ttl: '佐埜めるの - アイドル♥最強宣言',
       tags: [
-        'エンタメ',
-        'ポートレート'
-      ]
+        'MV',
+      ],
+      txt: '佐埜めるの様 ミュージックビデオ',
     },
     {
-      id:  '/EPeyiZwET3E',
-      ttl: 'Japan Hot Cocktail Fair',
+      id:  'PD4RXaITnkw',
+      ttl: 'TEASOBI - HIMAWARI',
       tags: [
-        'エンタメ',
-        'web広告'
-      ]
+        'MV',
+      ],
+      txt: 'TEASOBI様 ミュージックビデオ',
     },
     {
-      id:  'R8udefSc_-c',
-      ttl: '春音楽祭',
+      id:  'bF67xSLct2c',
+      ttl: 'Yvng Patra - 4 MY CUL',
       tags: [
-        'エンタメ',
-      ]
+        'MV',
+      ],
+      txt: 'Yvng Patra様 ミュージックビデオ',
     },
     {
-      id:  'Fa4jXd8ZkhA',
-      ttl: 'Tokyo Station Portrait Movie',
+      id:  'eBe8rzL9NWs',
+      ttl: '「GOEN」アプリ ',
       tags: [
-        'エンタメ',
-        'パーパス'
-      ]
+        'WEB広告',
+      ],
+      txt: 'ZEN Integration様 WEB広告',
     },
   ])
 
@@ -258,6 +360,7 @@
                 <span>{{ tag }}</span>
               </div>
             </div>
+            <div class="works_cont_wrapper_card_txt">{{ card.txt }}</div>
           </div>
         </div>
       </div>
@@ -335,7 +438,8 @@
     margin: 0 auto;
     padding: 60px;
     width: 100%;
-    color: black;
+    background-color: black;
+    color: white;
     &_label {
       margin: 0 auto;
       padding-bottom: 4px;
@@ -355,8 +459,8 @@
         cursor: pointer;
       }
       .isActive {
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
       }
     }
     &_cont {
@@ -372,28 +476,44 @@
         }
         &_card {
           margin-top: 40px;
+          padding-bottom: 8px;
           background-color: white;
           color: black;
+          cursor: pointer;
           iframe {
             width: 280px;
             height: 158px;
           }
           &_ttl {
-            padding: 6px;
-            font-size: 1.8rem;
+            padding: 0 6px;
+            font-size: 1.6rem;
+            width: 280px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
           &_tags {
-            padding: 6px 6px 16px;
+            margin-top: 2px;
+            padding: 0 6px;
             display: flex;
             span {
               margin-right: 4px;
-              padding: 6px 19px;
-              font-size: 1.3rem;
+              padding: 6px 8px;
+              font-size: 1rem;
               background-color: #d9d9d9;
             }
           }
+          &_txt {
+            margin-top: 8px;
+            padding: 0 6px;
+            font-size: 1.5rem;
+            width: 280px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
           &:hover {
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 12px 24px rgba(255, 255, 255, 0.3);
             transform: translateY(-4px) scale(1.01);
             animation: floating 0.3s ease;
           }

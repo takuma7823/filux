@@ -24,9 +24,6 @@
         <li @click="changePage('/services')">
           Services
         </li>
-        <li @click="changePage('/contact')">
-          Contact
-        </li>
       </ul>
     </div>
   </header>

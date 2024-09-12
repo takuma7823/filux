@@ -43,13 +43,12 @@
       txt: 'ALBA LAB様 ブランディング動画',
     },
     {
-      id:  'QqyAAPF6W44',
-      ttl: '株式会社OBS staff interview',
+      id:  'pAwtYrx3irw',
+      ttl: '佐埜めるの - アイドル♥最強宣言',
       tags: [
-        'インタビュー',
-        'プロモーション',
+        'MV',
       ],
-      txt: '株式会社OBS様 インタビュー動画',
+      txt: '佐埜めるの様 ミュージックビデオ',
     },
     {
       id:  'JdXZCzTMaU8',
@@ -460,14 +459,14 @@
         &_img {
           border-radius: 8px;
           width: 364px;
-          height: 140px;
+          height: 190px;
           background-repeat: no-repeat;
           background-size: 364px, 140px;
           position: relative;
           &_label {
             margin: auto;
             position: absolute;
-            top: 55px;
+            top: 75px;
             right: 0;
             bottom: 0;
             left: 0;
@@ -480,7 +479,7 @@
         &_txt {
           margin-top: 8px;
           text-align: left;
-          font-size: 1.4rem;
+          font-size: 1.5rem;
         }
         &:nth-child(1) {
           .partner_cont_card_img {

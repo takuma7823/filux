@@ -38,6 +38,14 @@
       txt: '株式会社OBS様 インタビュー動画',
     },
     {
+      id:  'pAwtYrx3irw',
+      ttl: '佐埜めるの - アイドル♥最強宣言',
+      tags: [
+        'MV',
+      ],
+      txt: '佐埜めるの様 ミュージックビデオ',
+    },
+    {
       id:  'IE8tfk0hZb8',
       ttl: 'RechaLu staff interview',
       tags: [
@@ -71,14 +79,6 @@
         'プロモーション',
       ],
       txt: 'WPT OSAKA 2024 ブランディング動画'
-    },
-    {
-      id:  'pAwtYrx3irw',
-      ttl: '佐埜めるの - アイドル♥最強宣言',
-      tags: [
-        'MV',
-      ],
-      txt: '佐埜めるの様 ミュージックビデオ',
     },
     {
       id:  'gxsqizlOAls',
@@ -246,6 +246,14 @@
       txt: '株式会社OBS様 インタビュー動画',
     },
     {
+      id:  'pAwtYrx3irw',
+      ttl: '佐埜めるの - アイドル♥最強宣言',
+      tags: [
+        'MV',
+      ],
+      txt: '佐埜めるの様 ミュージックビデオ',
+    },
+    {
       id:  'JdXZCzTMaU8',
       ttl: '株式会社アーツ staff interview',
       tags: [
@@ -271,14 +279,6 @@
         'プロモーション',
       ],
       txt: '福耳会様 ブランディング動画'
-    },
-    {
-      id:  'pAwtYrx3irw',
-      ttl: '佐埜めるの - アイドル♥最強宣言',
-      tags: [
-        'MV',
-      ],
-      txt: '佐埜めるの様 ミュージックビデオ',
     },
     {
       id:  'PD4RXaITnkw',
@@ -367,11 +367,11 @@
     </div>
     <div class="sns">
       <h3 class="sns_label">
-        SNS実績
+        SNS事例紹介
       </h3>
       <div class="sns_cont">
         <iframe
-          :src="'https://www.youtube.com/embed/4X6dx3lh9fk'"
+          :src="'https://www.youtube.com/embed/8jz46UXKJew'"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -379,44 +379,35 @@
         />
         <div class="sns_cont_wrapper"> 
           <div class="sns_cont_wrapper_ttl">
-            〇〇者様 採用向けパーパスムービー
+            「<span>HAIR & BEAUTY & </span>」高円寺店様 採用向け動画
           </div>
           <div class="sns_cont_wrapper_txt">
-            採用向け動画を制作し、採用数が5倍に増加や10人以上増えたといったお声も頂いております。
+            採用向けのプロモーション動画を制作し、採用数が5倍に増加。<br>
+            応募者が10人以上増えたといったお声も頂いております。
           </div>
         </div>
       </div>
       <div class="sns_cont">
-        <iframe
-          :src="'https://www.youtube.com/embed/4X6dx3lh9fk'"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        />
+        <div class="sns_cont_img1" />
         <div class="sns_cont_wrapper"> 
           <div class="sns_cont_wrapper_ttl">
-            〇〇者様 採用向けパーパスムービー
+            <span>Tik Tok</span>運用
           </div>
           <div class="sns_cont_wrapper_txt">
-            採用向け動画を制作し、採用数が5倍に増加や10人以上増えたといったお声も頂いております。
+            ターゲットを明確にし制作する動画を企画することで再生数・リアクション数が増加。<br>
+            投稿を重ねて得たデータを元に分析を重ねることでお客様の目標を達成することが可能となりました。
           </div>
         </div>
       </div>
       <div class="sns_cont">
-        <iframe
-          :src="'https://www.youtube.com/embed/4X6dx3lh9fk'"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        />
+        <div class="sns_cont_img2" />
         <div class="sns_cont_wrapper"> 
           <div class="sns_cont_wrapper_ttl">
-            〇〇者様 採用向けパーパスムービー
+            <span>Instagram</span>リール動画運用
           </div>
           <div class="sns_cont_wrapper_txt">
-            採用向け動画を制作し、採用数が5倍に増加や10人以上増えたといったお声も頂いております。
+            クオリティの高いリール動画を制作、運用することで登録者1000人を達成。<br>
+            リアクションの数・質が上がったというお声を頂いています。
           </div>
         </div>
       </div>
@@ -528,7 +519,7 @@
     &_label {
       margin: 0 auto 40px;
       padding-bottom: 4px;
-      width: 170px;
+      width: 240px;
       text-align: center;
       font-size: 4rem;
       border-bottom: 1px solid;
@@ -549,6 +540,23 @@
         &_txt {
           margin-top: 12px;
         }
+      }
+      &_img1 {
+        width: 300px;
+        height: 120px;
+        background-image: url('@/assets/img/tiktok.jpeg');
+        background-repeat: no-repeat;
+        background-size: 300px, 120px;
+      }
+      &_img2 {
+        width: 300px;
+        height: 120px;
+        background-image: url('@/assets/img/instagram.jpeg');
+        background-repeat: no-repeat;
+        background-size: 300px, 120px;
+      }
+      span {
+        font-weight: bold;
       }
     }
   }

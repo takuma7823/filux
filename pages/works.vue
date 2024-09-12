@@ -38,6 +38,14 @@
       txt: '株式会社OBS様 インタビュー動画',
     },
     {
+      id:  'goetf6WsZRY',
+      ttl: 'TEASOBI - チェリら',
+      tags: [
+        'MV',
+      ],
+      txt: 'TEASOBI様 ミュージックビデオ',
+    },
+    {
       id:  'pAwtYrx3irw',
       ttl: '佐埜めるの - アイドル♥最強宣言',
       tags: [
@@ -79,22 +87,6 @@
         'プロモーション',
       ],
       txt: 'WPT OSAKA 2024 ブランディング動画'
-    },
-    {
-      id:  'gxsqizlOAls',
-      ttl: 'dbs - 星',
-      tags: [
-        'MV',
-      ],
-      txt: 'dbs様 ミュージックビデオ',
-    },
-    {
-      id:  'weCqAog5FBs',
-      ttl: 'dbs - クローゼット',
-      tags: [
-        'MV',
-      ],
-      txt: 'dbs様 ミュージックビデオ',
     },
     {
       id:  'PD4RXaITnkw',
@@ -169,14 +161,6 @@
       txt: 'ALBA LAB様 ブランディング動画',
     },
     {
-      id:  'goetf6WsZRY',
-      ttl: 'TEASOBI - チェリら',
-      tags: [
-        'MV',
-      ],
-      txt: 'TEASOBI様 ミュージックビデオ',
-    },
-    {
       id:  'b84rf8kS2PM',
       ttl: 'ハイエナカー - とけないハート',
       tags: [
@@ -191,6 +175,22 @@
         'ライブ映像',
       ],
       txt: 'Hard Rock Cafe ライブ映像',
+    },
+    {
+      id:  'gxsqizlOAls',
+      ttl: 'dbs - 星',
+      tags: [
+        'MV',
+      ],
+      txt: 'dbs様 ミュージックビデオ',
+    },
+    {
+      id:  'weCqAog5FBs',
+      ttl: 'dbs - クローゼット',
+      tags: [
+        'MV',
+      ],
+      txt: 'dbs様 ミュージックビデオ',
     },
   ]
 

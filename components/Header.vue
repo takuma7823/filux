@@ -61,7 +61,7 @@
         justify-content: right;
         align-items: center;
         li {
-          margin-right: 40px;
+          margin-left: 40px;
           position: relative;
           cursor: pointer;
           &::after {
@@ -77,6 +77,39 @@
           &:hover::after {
             width: 100%;
           }
+        }
+      }
+    }
+  }
+}
+
+@include mq.sp {
+  .header {
+    border-bottom: 1px solid;
+    width: 100%;
+    height: 18vw;
+    background-color: white;
+    &_cont {
+      margin: 2vw auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &_left {
+        &_img {
+          width: 30vw;
+          height: 18vw;
+          background-image: url('@/assets/img/logo.jpg');
+          background-repeat: no-repeat;
+          background-size: 30vw, 18vw;
+        }
+      }
+      &_right {
+        margin-top: 4vw;
+        font-size: 1.68rem;
+        display: flex;
+        justify-content: right;
+        li {
+          margin-right: 5vw;
         }
       }
     }

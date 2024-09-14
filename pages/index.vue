@@ -55,7 +55,6 @@
       ttl: '株式会社アーツ staff interview',
       tags: [
         'インタビュー',
-        'プロモーション',
       ],
       txt: '株式会社アーツ様 会社紹介動画'
     },
@@ -99,10 +98,10 @@
           <span>filux</span>は映画制作を志すチームです
         </div>
         <div class="message_cont">
-          その為、誰よりも想い、表現、感情を大事にしています。<br>
-          広告映像に加え、採用向け動画、ブランディング動画、WEBCM、PR動画、<br>
-          SNS動画、インフォグラフィックス、エンタメコンテンツ、MV、ライブ撮影<br>
-          など様々な映像を制作しています。<br><br>
+          その為、誰よりも想い、表現、<br data-device="sp">感情を大事にしています。<br data-device="sp"><br data-device="sp"><br data-device="pc">
+          広告映像に加え、採用向け動画、ブランディング動画、WEBCM、PR動画、<br data-device="pc">
+          SNS動画、インフォグラフィックス、エンタメコンテンツ、MV、ライブ撮影<br data-device="pc">
+          など様々な映像を制作しています。<br data-device="sp"><br data-device="sp"><br data-device="pc"><br data-device="pc">
           あらゆるジャンルの動画・映像制作にハイクオリティで対応させて頂きます。
         </div>
       </div>
@@ -152,7 +151,7 @@
           <h4 class="why_cont_subLabel">
             何故動画を作るのか
           </h4>
-          <div class="why_cont_exp">
+          <div class="why_cont_exp" data-device="pc">
             <div class="why_cont_exp_txt"> 
               動画制作は、視覚だけでは伝えきれない感情や<br>
               メッセージを効果的に届けるための強力なツールです。<br>
@@ -165,30 +164,56 @@
             </div>
             <div class="why_cont_exp_img" />
           </div>
-        </div>
-      </div>
-      <div class="sns">
-      <div class="sns_cont">
-        <h3 class="sns_cont_label">
-          SNS Management
-        </h3>
-        <h4 class="sns_cont_subLabel">
-          クリエイティブ<span>×</span>データ
-        </h4>
-        <div class="sns_cont_exp">
-          <div class="sns_cont_exp_img" />
-          <div class="sns_cont_exp_txt"> 
-            クリエイティブなコンテンツ制作とデータに基づいた分析を融合させ、<br>
-            効果的なSNS戦略を実現します。<br>
-            魅力的なビジュアルやメッセージを発信するだけでなく、<br>
-            ユーザーの反応や行動をデータで解析し、<br>
-            最適なタイミングや方法でアプローチします。<br>
-            これにより、単なる情報発信ではなく、ユーザーの心を動かし、<br>
-            共感やアクションを促すことができるSNS運用を提供します。
+          <div class="why_cont_img" data-device="sp">
+            <div class="why_cont_img_txt">
+              動画制作は、視覚だけでは伝えきれない感情や<br>
+              メッセージを効果的に届けるための<br>強力なツールです。<br><br>
+              視覚的な情報と音声が組み合わさることで、<br>
+              文字や静止画では表現できない深い感動や<br>インパクトを与えます。<br><br>
+              また、動画は短時間で多くの情報を<br>伝えることができ、<br>
+              視聴者の心に残りやすい特徴があります。<br><br>
+              ブランドのストーリーや製品の魅力を<br>リアルに感じてもらうことで、<br>
+              信頼性を高め、より強い共感を<br>呼び起こすことができます。
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="sns">
+        <div class="sns_cont">
+          <h3 class="sns_cont_label" data-device="pc">
+            SNS Management
+          </h3>
+          <h3 class="sns_cont_label" data-device="sp">
+            Management
+          </h3>
+          <h4 class="sns_cont_subLabel">
+            クリエイティブ<span>×</span>データ
+          </h4>
+          <div class="sns_cont_exp" data-device="pc">
+            <div class="sns_cont_exp_img" />
+            <div class="sns_cont_exp_txt"> 
+              クリエイティブなコンテンツ制作とデータに基づいた分析を融合させ、<br>
+              効果的なSNS戦略を実現します。<br>
+              魅力的なビジュアルやメッセージを発信するだけでなく、<br>
+              ユーザーの反応や行動をデータで解析し、<br>
+              最適なタイミングや方法でアプローチします。<br>
+              これにより、単なる情報発信ではなく、ユーザーの心を動かし、<br>
+              共感やアクションを促すことができるSNS運用を提供します。
+            </div>
+          </div>
+          <div class="sns_cont_img" data-device="sp">
+            <div class="sns_cont_img_txt">
+              クリエイティブなコンテンツ制作と<br>データに基づいた分析を融合させ、<br>
+              効果的なSNS戦略を実現します。<br><br>
+              魅力的なビジュアルやメッセージを<br>発信するだけでなく、<br>
+              ユーザーの反応や行動をデータで解析し、<br>
+              最適なタイミングや方法でアプローチします。<br><br>
+              これにより、単なる情報発信ではなく、<br>ユーザーの心を動かし、<br>
+              共感やアクションを促すことができる<br>SNS運用を提供します。
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="partner">
         <h3 class="partner_label">
           Partner
@@ -520,6 +545,265 @@
     }
     100% {
       transform: translateY(-4px) scale(1.01);
+    }
+  }
+}
+
+@include mq.sp {
+  .page {
+    padding-top: 18vw;
+    width: 100%;
+    &_cont {
+      width: 100%;
+      &_video {
+        padding: 4vw 0;
+        background-color: black;
+        video {
+          margin: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .message {
+    padding: 12vw 0;
+    text-align: center;
+    &_label {
+      margin: 0 auto;
+      padding-bottom: 1vw;
+      width: 50vw;
+      font-size: 2rem;
+      border-bottom: 1px solid;
+    }
+    &_subLabel {
+      margin-top: 2vw;
+      font-size: 2rem;
+    }
+    &_subTtl {
+      margin-top: 8vw;
+      font-size: 1.8rem;
+      span {
+        font-size: 2.2rem;
+      }
+    }
+    &_cont {
+      margin-top: 2vw;
+      padding: 0 2.4vw;
+      font-size: 1.5rem;
+      line-height: 1.6;
+    }
+  }
+  .works {
+    margin: 0 auto;
+    padding: 12vw 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    &_label {
+      margin: 0 auto;
+      padding-bottom: 1vw;
+      width: 28vw;
+      text-align: center;
+      border-bottom: 1px solid;
+      font-size: 3.6rem;
+    }
+    &_cont {
+      margin: 4vw auto 0;
+      padding: 0 2.4vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &_card {
+        margin-top: 2.4vw;
+        width: 46.5vw;
+        background-color: white;
+        color: black;
+        iframe {
+          width: 46.5vw;
+          height: 40vw;
+        }
+        &_ttl {
+          padding: 0 1vw;
+          font-size: 1.5rem;
+        }
+        &_tags {
+          margin-top: 0 1vw;
+          padding: 0 1vw;
+          display: flex;
+          span {
+            padding: 1vw 2vw;
+            font-size: 1.3rem;
+            background-color: #d9d9d9;
+          }
+        }
+        &_txt {
+          margin: 1vw 0 2vw;
+          padding: 0 1vw;
+          font-size: 1.4rem;
+        }
+      }
+    }
+    &_btn {
+      margin-top: 8vw;
+      display: flex;
+      justify-content: center;
+      button {
+        border: 1px solid;
+        padding: 2vw 6vw;
+        font-size: 1.6rem;
+        color: white;
+      }
+    }
+  }
+  .why {
+    padding: 12vw 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    &_cont {
+      margin: 0 auto;
+      &_label {
+        margin: 0 auto;
+        padding-bottom: 1vw;
+        width: 22vw;
+        font-size: 4rem;
+        border-bottom: 1px solid;
+        text-align: center;
+      }
+      &_subLabel {
+        margin-top: 2vw;
+        font-size: 2rem;
+      }
+      &_img {
+        margin-top: 24vw;
+        width: 100%;
+        height: 80vw;
+        background-image: url('@/assets/img/why.jpeg');
+        background-repeat: no-repeat;
+        background-size: 100%, 80vw;
+        position: relative;
+        &_txt {
+          padding: 0 2.4vw;
+          width: 100%;
+          font-size: 1.5rem;
+          position: absolute;
+          top: -14vw;
+          text-shadow: 2px 2px 10px rgba(0, 0, 0, 1), -2px -2px 10px rgba(0, 0, 0, 1);
+          
+        }
+      }
+    }
+  }
+  .sns {
+    padding: 12vw 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    &_cont {
+      margin: 0 auto;
+      &_label {
+        margin: 0 auto;
+        padding-bottom: 1vw;
+        width: 62vw;
+        font-size: 4rem;
+        border-bottom: 1px solid;
+        text-align: center;
+      }
+      &_subLabel {
+        margin-top: -1vw;
+        font-size: 2rem;
+        span {
+          font-size: 3rem;
+        }
+      }
+      &_img {
+        margin-top: 12vw;
+        width: 100%;
+        height: 80vw;
+        background-image: url('@/assets/img/management.jpeg');
+        background-repeat: no-repeat;
+        background-size: 100%, 80vw;
+        position: relative;
+        &_txt {
+          padding: 0 2.4vw;
+          width: 100%;
+          font-size: 1.5rem;
+          position: absolute;
+          top: -4vw;
+          text-shadow: 2px 2px 10px rgba(0, 0, 0, 1), -2px -2px 10px rgba(0, 0, 0, 1);
+          
+        }
+      }
+    }
+  }
+  .partner {
+    padding: 12vw 0 40vw;
+    text-align: center;
+    &_label {
+      margin: 0 auto;
+      padding-bottom: 1vw;
+      width: 34vw;
+      font-size: 4rem;
+      border-bottom: 1px solid;
+    }
+    &_cont {
+      margin-top: 8vw;
+      padding: 0 2.4vw;
+      &_card {
+        margin-top: 4vw;
+        &_img {
+          padding-top: 7.6vw;
+          width: 100%;
+          height: 24vw;
+          background-repeat: no-repeat;
+          background-size: 100%, 24vw;
+          border-radius: 8px;
+          &_label {
+            font-size: 2.4rem;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          }
+        }
+        &_txt {
+          margin-top: 1vw;
+        }
+        &:nth-child(1) {
+          margin-top: 0;
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/shooting.jpeg');
+          }
+        }
+        &:nth-child(2) {
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/hairMake.jpeg');
+          }
+        }
+        &:nth-child(3) {
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/animater.jpeg');
+          }
+        }
+        &:nth-child(4) {
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/casting.jpeg');
+          }
+        }
+        &:nth-child(5) {
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/LINE.jpeg');
+          }
+        }
+        &:nth-child(6) {
+          .partner_cont_card_img {
+            background-image: url('@/assets/img/HP.jpeg');
+          }
+        }
+      }
     }
   }
 }

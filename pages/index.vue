@@ -47,7 +47,6 @@
       ttl: 'RechaLu staff interview',
       tags: [
         'インタビュー',
-        'プロモーション',
       ],
       txt: 'RechaLu様 採用動画',
     },
@@ -637,7 +636,7 @@
           font-size: 1.5rem;
         }
         &_tags {
-          margin-top: 0 1vw;
+          margin-top: 1vw;
           padding: 0 1vw;
           display: flex;
           span {

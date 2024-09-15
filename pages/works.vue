@@ -24,7 +24,6 @@
       ttl: 'HAIR & BEAUTY 「&」 staff interview',
       tags: [
         'インタビュー',
-        'プロモーション',
       ],
       txt: '「&」高円寺店様 採用動画',
     },
@@ -33,7 +32,6 @@
       ttl: '株式会社OBS staff interview',
       tags: [
         'インタビュー',
-        'プロモーション',
       ],
       txt: '株式会社OBS様 インタビュー動画',
     },
@@ -58,7 +56,6 @@
       ttl: 'RechaLu staff interview',
       tags: [
         'インタビュー',
-        'プロモーション',
       ],
       txt: 'RechaLu様 採用動画',
     },
@@ -67,7 +64,6 @@
       ttl: '株式会社アーツ staff interview',
       tags: [
         'インタビュー',
-        'プロモーション',
       ],
       txt: '株式会社アーツ様 会社紹介動画'
     },
@@ -76,7 +72,6 @@
       ttl: '福耳会 branding movie',
       tags: [
         'インタビュー',
-        'プロモーション',
       ],
       txt: '福耳会様 ブランディング動画'
     },
@@ -241,7 +236,6 @@
       ttl: '株式会社OBS staff interview',
       tags: [
         'インタビュー',
-        'プロモーション',
       ],
       txt: '株式会社OBS様 インタビュー動画',
     },
@@ -258,7 +252,6 @@
       ttl: '株式会社アーツ staff interview',
       tags: [
         'インタビュー',
-        'プロモーション',
       ],
       txt: '株式会社アーツ様 会社紹介動画'
     },
@@ -267,7 +260,6 @@
       ttl: 'RechaLu staff interview',
       tags: [
         'インタビュー',
-        'プロモーション',
       ],
       txt: 'RechaLu様 採用動画',
     },
@@ -276,7 +268,6 @@
       ttl: '福耳会 branding movie',
       tags: [
         'インタビュー',
-        'プロモーション',
       ],
       txt: '福耳会様 ブランディング動画'
     },
@@ -318,6 +309,17 @@
     }
   }
 
+  const changeCategorySp = (event: Event) => {
+    const target = event.target as HTMLSelectElement
+    const selectedValue = target.value
+    if (selectedValue === 'ALL') {
+      currentIds.value = youtubeIds
+    } else {
+      const filteredYoutubeIds = youtubeIds.filter(item => item.tags.includes(selectedValue))
+      currentIds.value = filteredYoutubeIds
+    }
+  }
+
 </script>
 
 <template>
@@ -326,7 +328,7 @@
       <h3 class="works_label">
         Works
       </h3>
-      <div class="works_category">
+      <div class="works_category" data-device="pc">
         <div 
           v-for="(category, index) in categories" :key="index"
           class="works_category_item"
@@ -335,6 +337,15 @@
         >
           {{ category }}
         </div>
+      </div>
+      <div class="works_category">
+        <select name="categories" data-device="sp" @change="changeCategorySp">
+          <option disabled value="">選択してください</option>
+          <option v-for="(category, index) in categories" :key="index" :value="category">
+            {{ category }}
+          </option>
+        </select>
+        <div class="works_category_icon">></div>
       </div>
       <div class="works_cont">
         <div 
@@ -379,7 +390,7 @@
         />
         <div class="sns_cont_wrapper"> 
           <div class="sns_cont_wrapper_ttl">
-            「<span>HAIR & BEAUTY & </span>」高円寺店様 採用向け動画
+            「<span>HAIR & BEAUTY & </span>」高円寺店様<br data-device="sp">採用向け動画
           </div>
           <div class="sns_cont_wrapper_txt">
             採用向けのプロモーション動画を制作し、採用数が5倍に増加。<br>
@@ -546,14 +557,14 @@
         height: 120px;
         background-image: url('@/assets/img/tiktok.jpeg');
         background-repeat: no-repeat;
-        background-size: 300px, 120px;
+        background-size: 300px 120px;
       }
       &_img2 {
         width: 300px;
         height: 120px;
         background-image: url('@/assets/img/instagram.jpeg');
         background-repeat: no-repeat;
-        background-size: 300px, 120px;
+        background-size: 300px 120px;
       }
       span {
         font-weight: bold;
@@ -566,6 +577,139 @@
     }
     100% {
       transform: translateY(-4px) scale(1.01);
+    }
+  }
+}
+
+@include mq.sp {
+  .page {
+    padding-top: 18vw;
+    width: 100%;
+  }
+  .works {
+    margin: 0 auto;
+    padding: 12vw 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    &_label {
+      margin: 0 auto;
+      padding-bottom: 1vw;
+      width: 28vw;
+      text-align: center;
+      border-bottom: 1px solid;
+      font-size: 3.6rem;
+    }
+    &_category {
+      margin-top: 6vw;
+      width: 36vw;
+      position: relative;
+      select {
+        margin: 4vw 2.4vw 0;
+        border: 1px solid white;
+        padding: 2vw 0;
+        padding-left: 2vw;
+        width: 36vw;
+        text-align: left;
+        color: white;
+        font-size: 1.4rem;
+      }
+      &_icon {
+        color: white;
+        font-size: 1.6rem;
+        position: absolute;
+        bottom: 1.4vw;
+        right: -0.6vw;
+      }
+    }
+    &_cont {
+      margin: 6vw auto 0;
+      padding: 0 2.4vw;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &_wrapper {
+        &_card {
+          margin-top: 2.4vw;
+          width: 46.5vw;
+          height: 72vw;
+          background-color: white;
+          color: black;
+          iframe {
+            width: 46.5vw;
+            height: 40vw;
+          }
+          &_ttl {
+            padding: 0 1vw;
+            font-size: 1.5rem;
+          }
+          &_tags {
+            margin-top: 1vw;
+            padding: 0 1vw;
+            span {
+              padding: 1vw 2vw;
+              font-size: 1.3rem;
+              background-color: #d9d9d9;
+            }
+          }
+          &_txt {
+            margin: 1vw 0 2vw;
+            padding: 0 1vw;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .sns {
+    margin: 0 auto;
+    padding: 12vw 0 20vw;
+    width: 100%;
+    background-color: black;
+    color: white;
+    &_label {
+      margin: 0 auto;
+      padding-bottom: 1vw;
+      width: 38vw;
+      text-align: center;
+      border-bottom: 1px solid;
+      font-size: 2.4rem;
+    }
+    &_cont {
+      margin: 4vw auto;
+      padding: 0 8vw;
+      iframe {
+        width: 100%;
+        height: 46vw;
+      }
+      &_wrapper {
+        padding: 6vw 0;
+        border-bottom: 1px solid;
+        &_ttl {
+          font-size: 1.8rem;
+          font-weight: bold;
+        }
+        &_txt {
+          margin-top: 2vw;
+        }
+      }
+      &_img1 {
+        border: 1px solid white;
+        width: 100%;
+        height: 30vw;
+        background-image: url('@/assets/img/tiktok.jpeg');
+        background-repeat: no-repeat;
+        background-size: 100% 30vw;
+      }
+      &_img2 {
+        width: 100%;
+        height: 36vw;
+        background-image: url('@/assets/img/instagram.jpeg');
+        background-repeat: no-repeat;
+        background-size: 100% 36vw;
+      }
     }
   }
 }

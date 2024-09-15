@@ -43,13 +43,22 @@
       txt: 'ALBA LAB様 ブランディング動画',
     },
     {
-      id:  'pAwtYrx3irw',
-      ttl: '佐埜めるの - アイドル♥最強宣言',
+      id:  'IE8tfk0hZb8',
+      ttl: 'RechaLu staff interview',
       tags: [
-        'MV',
+        'インタビュー',
+        'プロモーション',
       ],
-      txt: '佐埜めるの様 ミュージックビデオ',
+      txt: 'RechaLu様 採用動画',
     },
+    // {
+    //   id:  'pAwtYrx3irw',
+    //   ttl: '佐埜めるの - アイドル♥最強宣言',
+    //   tags: [
+    //     'MV',
+    //   ],
+    //   txt: '佐埜めるの様 ミュージックビデオ',
+    // },
     {
       id:  'JdXZCzTMaU8',
       ttl: '株式会社アーツ staff interview',

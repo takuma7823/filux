@@ -45,14 +45,14 @@
       ],
       txt: 'TEASOBI様 ミュージックビデオ',
     },
-    {
-      id:  'pAwtYrx3irw',
-      ttl: '佐埜めるの - アイドル♥最強宣言',
-      tags: [
-        'MV',
-      ],
-      txt: '佐埜めるの様 ミュージックビデオ',
-    },
+    // {
+    //   id:  'pAwtYrx3irw',
+    //   ttl: '佐埜めるの - アイドル♥最強宣言',
+    //   tags: [
+    //     'MV',
+    //   ],
+    //   txt: '佐埜めるの様 ミュージックビデオ',
+    // },
     {
       id:  'IE8tfk0hZb8',
       ttl: 'RechaLu staff interview',
@@ -245,14 +245,14 @@
       ],
       txt: '株式会社OBS様 インタビュー動画',
     },
-    {
-      id:  'pAwtYrx3irw',
-      ttl: '佐埜めるの - アイドル♥最強宣言',
-      tags: [
-        'MV',
-      ],
-      txt: '佐埜めるの様 ミュージックビデオ',
-    },
+    // {
+    //   id:  'pAwtYrx3irw',
+    //   ttl: '佐埜めるの - アイドル♥最強宣言',
+    //   tags: [
+    //     'MV',
+    //   ],
+    //   txt: '佐埜めるの様 ミュージックビデオ',
+    // },
     {
       id:  'JdXZCzTMaU8',
       ttl: '株式会社アーツ staff interview',

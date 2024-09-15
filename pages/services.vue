@@ -494,7 +494,7 @@
     &_label {
       margin: 0 auto;
       padding-bottom: 1vw;
-      width: 60vw;
+      width: 55vw;
       text-align: center;
       border-bottom: 1px solid;
       font-size: 2rem;
@@ -585,7 +585,7 @@
       &_label {
         margin: 0 2.4vw;
         padding-bottom: 1vw;
-        width: 26vw;
+        width: 30vw;
         border-bottom: 1px solid;
         font-size: 3rem;
       }
@@ -624,7 +624,7 @@
       &_label {
         margin: 0 2.4vw;
         padding-bottom: 1vw;
-        width: 26vw;
+        width: 31vw;
         border-bottom: 1px solid;
         font-size: 3rem;
       }
@@ -663,7 +663,7 @@
       &_label {
         margin: 0 2.4vw;
         padding-bottom: 1vw;
-        width: 26vw;
+        width: 14vw;
         border-bottom: 1px solid;
         font-size: 3rem;
       }
@@ -702,7 +702,7 @@
       &_label {
         margin: 0 2.4vw;
         padding-bottom: 1vw;
-        width: 26vw;
+        width: 47vw;
         border-bottom: 1px solid;
         font-size: 3rem;
       }

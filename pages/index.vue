@@ -90,7 +90,7 @@
         <video
           ref="videoPlayer"
           @ended="playNextVideo"
-          autoplay muted
+          autoplay muted playsinline
         >
           <source :src="videos[currentVideoIndex]" type="video/mp4" />
         </video>
@@ -624,12 +624,14 @@
       justify-content: space-between;
       &_card {
         margin-top: 2.4vw;
-        width: 46.5vw;
+        width: 46.3vw;
+        height: 71.8vw;
         background-color: white;
         color: black;
         iframe {
           width: 46.5vw;
           height: 40vw;
+          background-color: black;
         }
         &_ttl {
           padding: 0 1vw;

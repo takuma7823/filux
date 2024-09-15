@@ -632,8 +632,8 @@
       &_wrapper {
         &_card {
           margin-top: 2.4vw;
-          width: 46.5vw;
-          height: 72vw;
+          width: 46.3vw;
+          height: 71.8vw;
           background-color: white;
           color: black;
           iframe {

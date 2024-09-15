@@ -761,7 +761,7 @@
     }
     &_cont {
       margin-top: 8vw;
-      padding: 0 2.4vw;
+      padding: 0 12vw;
       &_card {
         margin-top: 4vw;
         &_img {

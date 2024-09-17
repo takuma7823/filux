@@ -52,6 +52,38 @@
     //   txt: '佐埜めるの様 ミュージックビデオ',
     // },
     {
+      id:  'Yt6tY68Ngow',
+      ttl: 'GENN - ME',
+      tags: [
+        'MV',
+      ],
+      txt: 'GENN様 ミュージックビデオ',
+    },
+    {
+      id:  'OmHcVUe3BPA',
+      ttl: 'SonSon, GENN - Limit!!',
+      tags: [
+        'MV',
+      ],
+      txt: 'SonSon, GENN様 ミュージックビデオ',
+    },
+    {
+      id:  'yN2wNOW6Zuk',
+      ttl: 'aimmé - monochrome',
+      tags: [
+        'MV',
+      ],
+      txt: 'aimmé様 ミュージックビデオ',
+    },
+    {
+      id:  'XRikXbMGFUM',
+      ttl: 'DINGO - Meaning',
+      tags: [
+        'MV',
+      ],
+      txt: 'DINGO様 ミュージックビデオ',
+    },
+    {
       id:  'IE8tfk0hZb8',
       ttl: 'RechaLu staff interview',
       tags: [
@@ -187,6 +219,22 @@
       ],
       txt: 'dbs様 ミュージックビデオ',
     },
+    {
+      id:  '7SMxP0rP1QE',
+      ttl: '農家の台所 みのすけ interview',
+      tags: [
+        'インタビュー',
+      ],
+      txt: '農家の台所 みのすけ様 インタビュー',
+    },
+    {
+      id:  '7SMxP0rP1QE',
+      ttl: 'めがね製作所カフェ藍丸 interview',
+      tags: [
+        'インタビュー',
+      ],
+      txt: 'めがね製作所カフェ藍丸様 インタビュー',
+    },
   ]
 
   const categories = [
@@ -295,6 +343,14 @@
       ],
       txt: 'ZEN Integration様 WEB広告',
     },
+    {
+      id:  'OmHcVUe3BPA',
+      ttl: 'SonSon, GENN - Limit!!',
+      tags: [
+        'MV',
+      ],
+      txt: 'SonSon, GENN様 ミュージックビデオ',
+    },
   ])
 
   const changeCategory = (id: string) => {
@@ -338,8 +394,8 @@
           {{ category }}
         </div>
       </div>
-      <div class="works_category">
-        <select name="categories" data-device="sp" @change="changeCategorySp">
+      <div class="works_category" data-device="sp">
+        <select name="categories" @change="changeCategorySp">
           <option disabled value="">選択してください</option>
           <option v-for="(category, index) in categories" :key="index" :value="category">
             {{ category }}

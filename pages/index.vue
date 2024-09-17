@@ -229,15 +229,15 @@
         <div class="partner_cont">
           <div class="partner_cont_card">
             <div class="partner_cont_card_img">
-              <div class="partner_cont_card_img_label">Shooting Assistant</div>
+              <div class="partner_cont_card_img_label">Shooting</div>
             </div>
-            <div class="partner_cont_card_txt">撮影アシスタント</div>
+            <div class="partner_cont_card_txt">カメラ/ライティング/アシスタント</div>
           </div>
           <div class="partner_cont_card">
             <div class="partner_cont_card_img">
               <div class="partner_cont_card_img_label">Hair Make up/Stylist</div>
             </div>
-            <div class="partner_cont_card_txt">ヘアメイク・スタイリスト</div>
+            <div class="partner_cont_card_txt">ヘアメイク/スタイリスト</div>
           </div>
           <div class="partner_cont_card">
             <div class="partner_cont_card_img">

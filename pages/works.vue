@@ -228,7 +228,7 @@
       txt: '農家の台所 みのすけ様 インタビュー',
     },
     {
-      id:  '7SMxP0rP1QE',
+      id:  'odd9M6iXDOw',
       ttl: 'めがね製作所カフェ藍丸 interview',
       tags: [
         'インタビュー',

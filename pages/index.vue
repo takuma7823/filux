@@ -35,20 +35,20 @@
       txt: 'TEASOBI様 ミュージックビデオ',
     },
     {
-      id:  'HaeakAetO-o',
-      ttl: 'ALBA LAB branding movie',
+      id:  'ouQwaAmkx2g',
+      ttl: 'PIST6 promotion video',
       tags: [
-        'WEB広告',
+        'プロモーション',
       ],
-      txt: 'ALBA LAB様 ブランディング動画',
+      txt: 'PIST6 プロモーション',
     },
     {
-      id:  'IE8tfk0hZb8',
-      ttl: 'RechaLu staff interview',
+      id:  '0xP5TCvuo08',
+      ttl: '短編映画「モテ気」',
       tags: [
-        'インタビュー',
+        '短編映画',
       ],
-      txt: 'RechaLu様 採用動画',
+      txt: 'U-NEXT公開短編映画',
     },
     // {
     //   id:  'pAwtYrx3irw',

@@ -3,6 +3,14 @@
   const currentCategory = ref('ALL')
 
   const youtubeIds = [
+  {
+      id:  '7du5KK4zcPU',
+      ttl: 'Red Eye / SMOKE OG feat.D.O . NANJAMAN',
+      tags: [
+        'MV',
+      ],
+      txt: 'Red Eye ミュージックビデオ'
+    },
     {
       id:  'CA8XnL8Dz4c',
       ttl: 'みそる-ヒカル×バンから',
@@ -345,12 +353,12 @@
       txt: 'RechaLu様 採用動画',
     },
     {
-      id:  '6TqSqMUkrKA',
-      ttl: '福耳会 branding movie',
+      id:  '7du5KK4zcPU',
+      ttl: 'Red Eye / SMOKE OG feat.D.O . NANJAMAN',
       tags: [
-        'インタビュー',
+        'MV',
       ],
-      txt: '福耳会様 ブランディング動画'
+      txt: 'Red Eye ミュージックビデオ'
     },
     {
       id:  'PD4RXaITnkw',

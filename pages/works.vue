@@ -3,7 +3,15 @@
   const currentCategory = ref('ALL')
 
   const youtubeIds = [
-  {
+    {
+      id:  'iWI7f9JfFUk',
+      ttl: 'JAKEN-OMAE feat.百足＆韻マン',
+      tags: [
+        'MV',
+      ],
+      txt: 'ミュージックビデオ',
+    },
+    {
       id:  '7du5KK4zcPU',
       ttl: 'Red Eye / SMOKE OG feat.D.O . NANJAMAN',
       tags: [

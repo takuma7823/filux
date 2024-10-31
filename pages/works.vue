@@ -4,6 +4,22 @@
 
   const youtubeIds = [
     {
+      id:  'V5S63wefEaA',
+      ttl: '茂木食品工業株式会社 interview',
+      tags: [
+        'インタビュー',
+      ],
+      txt: '茂木食品工業様 紹介動画',
+    },
+    {
+      id:  'rrju16aIgkA',
+      ttl: 'サラダバーグマニュアル動画',
+      tags: [
+        'インタビュー',
+      ],
+      txt: '茂木食品工業様 マニュアル動画',
+    },
+    {
       id:  'iWI7f9JfFUk',
       ttl: 'JAKEN-OMAE feat.百足＆韻マン',
       tags: [

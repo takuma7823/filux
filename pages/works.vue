@@ -4,6 +4,22 @@
 
   const youtubeIds = [
     {
+      id:  '1mgNoTe-aPk',
+      ttl: 'CEO award PV',
+      tags: [
+        'プロモーション',
+      ],
+      txt: 'CEO award プロモーション',
+    },
+    {
+      id:  'VYqnXIrtdc0',
+      ttl: 'Nastylone - Pirate Ship',
+      tags: [
+        'MV',
+      ],
+      txt: 'ミュージックビデオ',
+    },
+    {
       id:  'V5S63wefEaA',
       ttl: '茂木食品工業株式会社 interview',
       tags: [

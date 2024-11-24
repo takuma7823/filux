@@ -11,14 +11,6 @@
 
   const youtubeIds = [
     {
-      id:  'CA8XnL8Dz4c',
-      ttl: 'みそる-ヒカル×バンから',
-      tags: [
-        'プロモーション',
-      ],
-      txt: 'みそる プロモーション動画',
-    },
-    {
       id:  'XKOw60Hr_hw',
       ttl: 'and group 2024 promotion video',
       tags: [
@@ -50,14 +42,14 @@
       ],
       txt: 'U-NEXT公開短編映画',
     },
-    // {
-    //   id:  'pAwtYrx3irw',
-    //   ttl: '佐埜めるの - アイドル♥最強宣言',
-    //   tags: [
-    //     'MV',
-    //   ],
-    //   txt: '佐埜めるの様 ミュージックビデオ',
-    // },
+    {
+      id:  'pAwtYrx3irw',
+      ttl: '佐埜めるの - アイドル♥最強宣言',
+      tags: [
+        'MV',
+      ],
+      txt: '佐埜めるの様 ミュージックビデオ',
+    },
     {
       id:  'JdXZCzTMaU8',
       ttl: '株式会社アーツ staff interview',

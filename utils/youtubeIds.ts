@@ -8,6 +8,14 @@ export const youtubeIds = [
     txt: 'CEO award プロモーション',
   },
   {
+    id:  'G68eEwTmJnE',
+    ttl: 'dbs - ステーション',
+    tags: [
+        'MV',
+    ],
+    txt: 'dbs様 ミュージックビデオ',
+  },
+  {
     id:  'VYqnXIrtdc0',
     ttl: 'Nastylone - Pirate Ship',
     tags: [

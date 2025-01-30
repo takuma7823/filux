@@ -1,11 +1,9 @@
 <script lang="ts" setup>
-
   const router = useRouter()
 
   const changePage = (id: string) => {
     router.push(id)
   }
-
 </script>
 
 <template>
@@ -18,11 +16,11 @@
         <li @click="changePage('/')">
           Home
         </li>
-        <li @click="changePage('/works')">
-          Works
+        <li @click="changePage('/film')">
+          Film
         </li>
-        <li @click="changePage('/services')">
-          Services
+        <li @click="changePage('/index2')">
+          About
         </li>
       </ul>
     </div>
@@ -36,32 +34,32 @@
 
 @include mq.pc {
   .header {
-    border-bottom: 1px solid;
     width: 100%;
-    height: 71px;
-    background-color: white;
+    height: 120px;
+    background-color: transparent;
     &_cont {
-      margin: 0 auto;
-      width: 1200px;
+      margin-top: 0;
+      margin-left: 20px;
+      width: 80%;
       display: flex;
       justify-content: space-between;
       &_left {
         &_img {
-          width: 212px;
-          height: 71px;
-          background-image: url('@/assets/img/logo.jpg');
+          width: 280px;
+          height: 120px;
+          background-image: url('@/assets/img/logo2.png');
           background-repeat: no-repeat;
-          background-size: 140px, 36px;
+          background-size: 280px, 120px;
         }
       }
       &_right {
-        width: 60%;
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         display: flex;
         justify-content: right;
         align-items: center;
+        color: white;
         li {
-          margin-left: 40px;
+          margin-left: 120px;
           position: relative;
           cursor: pointer;
           &::after {
@@ -69,14 +67,14 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 0;
+            width: 280px;
             height: 1px;
-            background-color: black;
-            transition: width 0.3s ease;
+            background-color: white;
+            // transition: width 0.3s ease;
           }
-          &:hover::after {
-            width: 100%;
-          }
+          // &:hover::after {
+          //   width: 100%;
+          // }
         }
       }
     }
@@ -85,31 +83,43 @@
 
 @include mq.sp {
   .header {
-    border-bottom: 1px solid;
-    width: 100%;
-    height: 18vw;
-    background-color: white;
+    width: 100vw;
+    height: 15vw;
+    background-color: transparent;
     &_cont {
-      margin: 2vw auto;
-      width: 100%;
+      width: 90vw;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       &_left {
         &_img {
-          width: 30vw;
-          height: 18vw;
-          background-image: url('@/assets/img/logo.jpg');
+          width: 40vw;
+          height: 15vw;
+          background-image: url('@/assets/img/logo2.png');
           background-repeat: no-repeat;
-          background-size: 30vw, 18vw;
+          background-size: contain;
         }
       }
       &_right {
-        margin-top: 4vw;
-        font-size: 1.68rem;
+        font-size: 1.2rem;
         display: flex;
         justify-content: right;
+        align-items: center;
+        color: white;
         li {
-          margin-right: 5vw;
+          margin-left: 8vw;
+          position: relative;
+          cursor: pointer;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 12vw;
+            height: 1px;
+            background-color: white;
+          }
         }
       }
     }

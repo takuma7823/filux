@@ -19,5 +19,14 @@
       text-align: center;
     }
   }
+
+  @include mq.sp {
+    .copyright {
+      color: white;
+      font-size: 1.2rem;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+  }
   
   </style>

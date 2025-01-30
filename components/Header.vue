@@ -81,4 +81,49 @@
   }
 }
 
+@include mq.sp {
+  .header {
+    width: 100vw;
+    height: 15vw;
+    background-color: transparent;
+    &_cont {
+      width: 90vw;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &_left {
+        &_img {
+          width: 40vw;
+          height: 15vw;
+          background-image: url('@/assets/img/logo2.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+      &_right {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        color: white;
+        li {
+          margin-left: 8vw;
+          position: relative;
+          cursor: pointer;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 12vw;
+            height: 1px;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
 </style>

@@ -1,5 +1,9 @@
 <script setup lang="ts">
 
+  definePageMeta({
+    layout: false,
+  })
+
   const router = useRouter()
 
   const imageList = [
@@ -132,7 +136,6 @@
   }
 
   const getImages = computed(() => {
-    console.log(imageList.map(subArray => subArray.slice(0, -1)));
     const filteredImages = imageList.map(subArray => subArray.slice(0, -1)).flat();
     for (let i = filteredImages.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -146,7 +149,24 @@
 
 <template>
   <div class="page">
-    <div class="page_background"></div>
+    <header class="header">
+      <div class="header_cont">
+        <div class="header_cont_left">
+          <div class="header_cont_left_img" />
+        </div>
+        <ul class="header_cont_right">
+          <li @click="changePage('/')">
+            Home
+          </li>
+          <li @click="changePage('/film')">
+            Film
+          </li>
+          <li @click="changePage('/index2')">
+            About
+          </li>
+        </ul>
+      </div>
+    </header>
     <div class="page_cont">
       <Slider :images="getImages"/>
       <div class="message">
@@ -320,6 +340,11 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="copyright">
+        &copy; 2024 Your Website. All Rights Reserved.
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -331,16 +356,6 @@
 @include mq.pc {
   .page {
     width: 100%;
-    &_background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 120px;
-      z-index: -1;
-      overflow: hidden;
-      background-color: black;
-    }
     &_cont {
       width: 100%;
       &_video {
@@ -610,6 +625,59 @@
       }
     }
   }
+  .header {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    &_cont {
+      margin-top: 0;
+      margin-left: 20px;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      &_left {
+        &_img {
+          width: 280px;
+          height: 120px;
+          background-image: url('@/assets/img/logo2.png');
+          background-repeat: no-repeat;
+          background-size: 280px, 120px;
+        }
+      }
+      &_right {
+        font-size: 2.2rem;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        color: white;
+        li {
+          margin-left: 120px;
+          position: relative;
+          cursor: pointer;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 280px;
+            height: 1px;
+            background-color: white;
+            // transition: width 0.3s ease;
+          }
+          // &:hover::after {
+          //   width: 100%;
+          // }
+        }
+      }
+    }
+  }
+  .copyright {
+      color: white;
+      background-color: black;
+      font-size: 1.6rem;
+      padding: 20px 0;
+      text-align: center;
+    }
   @keyframes floating {
     0% {
       transform: translateY(0) scale(1);
@@ -622,7 +690,6 @@
 
 @include mq.sp {
   .page {
-    padding-top: 18vw;
     width: 100%;
     &_cont {
       width: 100%;
@@ -814,7 +881,7 @@
     }
   }
   .partner {
-    padding: 12vw 0 40vw;
+    padding: 12vw 0 10vw;
     text-align: center;
     &_label {
       margin: 0 auto;
@@ -878,6 +945,55 @@
         }
       }
     }
+  }
+  .header {
+    width: 100vw;
+    height: 15vw;
+    background-color: black;
+    &_cont {
+      width: 90vw;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &_left {
+        &_img {
+          width: 40vw;
+          height: 15vw;
+          background-image: url('@/assets/img/logo2.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+      &_right {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        color: white;
+        li {
+          margin-left: 8vw;
+          position: relative;
+          cursor: pointer;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 12vw;
+            height: 1px;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    color: white;
+    background-color: black;
+    font-size: 1.2rem;
+    padding: 10vw 0;
+    text-align: center;
   }
 }
 

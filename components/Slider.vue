@@ -150,4 +150,69 @@ onBeforeUnmount(() => {
   }
 }
 
+@include mq.sp {
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 42vw;
+    overflow: hidden;
+  }
+
+  .slide-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+
+  .slide-image.active {
+    opacity: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Times New Roman", serif;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .overlay-border {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    pointer-events: none;
+  }
+
+  /* テキスト */
+  .overlay-text {
+    text-align: center;
+    font-size: 1rem;
+    opacity: 1;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  /* マウスオーバー時の表示 */
+  .overlay.show {
+    opacity: 0;
+  }
+
+  .overlay.show .overlay-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 </style>

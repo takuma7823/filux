@@ -45,7 +45,6 @@
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
     }
     currentIds.value = shuffled.slice(0, 12);
-    console.log(currentIds.value)
   }
 
   // NOTE: created

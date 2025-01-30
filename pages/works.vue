@@ -55,6 +55,7 @@
 
 <template>
   <div class="page">
+    <div class="page_background"></div>
     <div class="works">
       <h3 class="works_label">
         Works
@@ -164,8 +165,18 @@
 
 @include mq.pc {
   .page {
-    padding: 71px 0 160px;
+    padding: 0 0 160px;
     width: 100%;
+    &_background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      z-index: -1;
+      overflow: hidden;
+      background-color: black;
+    }
   }
   .works {
     margin: 0 auto;

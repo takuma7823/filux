@@ -7,8 +7,5 @@
 </template>
 
 <style lang="scss" scoped>
-  .header {
-    position: fixed;
-    z-index: 1000;
-  }
+
 </style>

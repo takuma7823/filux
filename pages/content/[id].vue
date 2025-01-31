@@ -132,10 +132,25 @@ const getOverlayList = computed(() => {
           margin: 0 auto;
           width: 70%;
           height: 380px;
+          position: relative;
           img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.3);
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+          }
+          &:hover::after {
+            opacity: 1;
           }
         }
       }

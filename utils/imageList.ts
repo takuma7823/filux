@@ -54,12 +54,12 @@ export const imageList = [
     '/img/film/&/14.png',
   ],
   [
-    '/img/film/ステーション/6.png',
     '/img/film/ステーション/1.png',
     '/img/film/ステーション/2.png',
     '/img/film/ステーション/3.png',
     '/img/film/ステーション/4.png',
     '/img/film/ステーション/5.png',
+    '/img/film/ステーション/6.png',
     '/img/film/ステーション/7.png',
     '/img/film/ステーション/8.png',
     '/img/film/ステーション/9.png',

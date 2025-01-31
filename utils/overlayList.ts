@@ -4,12 +4,14 @@ export const overlayList = [
     mvTitle: 'クローゼット',
     artist: 'dbs',
     director: 'Kohei Yamagami',
+    youtubeId: 'gxsqizlOAls',
   },
   {
     title: 'Music Video',
     mvTitle: 'Pirate Ship',
     artist: 'nastylone',
     director: 'Kohei Yamagami',
+    youtubeId: 'VYqnXIrtdc0',
   },
   {
     title: 'Music Video',
@@ -22,11 +24,13 @@ export const overlayList = [
     mvTitle: '&',
     artist: '',
     director: 'Kohei Yamagami',
+    youtubeId: 'XKOw60Hr_hw',
   },
   {
     title: 'Music Video',
     mvTitle: 'ステーション',
     artist: 'dbs',
     director: 'Kohei Yamagami',
+    youtubeId: 'G68eEwTmJnE',
   },
 ]

@@ -1,17 +1,27 @@
 <script lang="ts" setup>
+  const videoPlayer = ref<HTMLVideoElement | null>(null)
 
+  onMounted(() => {
+    setTimeout(() => {
+      if (videoPlayer.value) {
+        videoPlayer.value.play()
+      }
+    }, 3000)
+  });
 </script>
+
 <template>
   <div class="page">
     <div class="page_background">
       <video
         ref="videoPlayer"
-        autoplay muted playsinline loop
+        muted playsinline loop
       >
         <source :src="'/videos/top.mp4'" type="video/mp4" />
       </video>
     </div>
     <div class="page_cont"></div>
+    <Loading />
   </div>
 </template>
 

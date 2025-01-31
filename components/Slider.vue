@@ -8,43 +8,42 @@ const props = defineProps({
     type: Object,
     required: false
   }
-});
-
-const currentIndex = ref(0);
-const isHovered = ref(false);
-let interval;
+})
+const currentIndex = ref(0)
+const isHovered = ref(false)
+let interval
 
 const nextSlide = () => {
-  currentIndex.value = (currentIndex.value + 1) % props.images.length;
-};
+  currentIndex.value = (currentIndex.value + 1) % props.images.length
+}
 
 // スライドショーを開始
 const startSlideshow = () => {
-  isHovered.value = true;
-  restartSlideshow(2000); // マウスオーバー時は2秒でスライド
-};
+  isHovered.value = true
+  restartSlideshow(2000) // マウスオーバー時は2秒でスライド
+}
 
 // スライドショーを停止
 const stopSlideshow = () => {
-  isHovered.value = false;
-  restartSlideshow(3000); // 通常時は3秒でスライド
-};
+  isHovered.value = false
+  restartSlideshow(3000) // 通常時は3秒でスライド
+}
 
 // インターバルを設定し直す
 const restartSlideshow = (intervalTime) => {
-  clearInterval(interval);
-  interval = setInterval(nextSlide, intervalTime);
-};
+  clearInterval(interval)
+  interval = setInterval(nextSlide, intervalTime)
+}
 
 // 初回スライドショースタート（通常3秒）
 onMounted(() => {
-  restartSlideshow(3000);
-});
+  restartSlideshow(3000)
+})
 
 // コンポーネントが破棄されるときにインターバルをクリア
 onBeforeUnmount(() => {
-  clearInterval(interval);
-});
+  clearInterval(interval)
+})
 </script>
 
 <template>

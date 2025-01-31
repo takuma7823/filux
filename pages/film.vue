@@ -1,8 +1,13 @@
 <script lang="ts" setup>
   
-  import { imageList } from '~/utils/imageList';
-  import { overlayList } from '~/utils/overlayList';
+import { imageList } from '~/utils/imageList'
+import { overlayList } from '~/utils/overlayList'
 
+const router = useRouter()
+
+const goContent = (id: number) => {
+  router.push(({ path: `/content/${id}`})) 
+}
 </script>
 
 <template>
@@ -15,7 +20,11 @@
             class="filmBlock_cont"
             v-for="(images, index) in imageList" :key="index"
           >
-            <Slider :images="images" :overlay-cont="overlayList[index]"/>
+            <Slider 
+              :images="images" 
+              :overlay-cont="overlayList[index]"
+              @click="goContent(index)"
+            />
           </div>
         </div>
       </div>

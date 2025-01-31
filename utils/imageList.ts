@@ -1,10 +1,10 @@
 export const imageList = [
   [
     '/img/film/クローゼット/2.png',
+    '/img/film/クローゼット/6.png',
     '/img/film/クローゼット/3.png',
     '/img/film/クローゼット/4.png',
     '/img/film/クローゼット/5.png',
-    '/img/film/クローゼット/6.png',
     '/img/film/クローゼット/7.png',
     '/img/film/クローゼット/8.png',
     '/img/film/クローゼット/9.png',

@@ -33,4 +33,32 @@ export const overlayList = [
     director: 'Kohei Yamagami',
     youtubeId: 'G68eEwTmJnE',
   },
+  {
+    title: 'Music Video',
+    mvTitle: '星',
+    artist: 'dbs',
+    director: 'Kohei Yamagami',
+    youtubeId: 'gxsqizlOAls',
+  },
+  {
+    title: 'Music Video',
+    mvTitle: 'アイドル♡最強宣言',
+    artist: '佐埜めるの',
+    director: 'Toru Ooshima',
+    youtubeId: 'qYFCUk99liw',
+  },
+  {
+    title: 'Promotion Video',
+    mvTitle: 'mo, de in japan',
+    director: 'Toru Ooshima',
+  },
+  {
+    title: 'Promotion Video',
+    mvTitle: 'WPT 2024',
+    director: 'Kohei Yamagami',
+  },
+  {
+    title: 'Promotion Video',
+    mvTitle: '第6回秋川流域花火大会',
+  },
 ]

@@ -59,7 +59,7 @@ const getOverlayList = computed(() => {
           <p v-if="getOverlayList.artist">
             Artist Name「{{ getOverlayList.artist }}」
           </p>
-          <p>Directed By {{ getOverlayList.director }}</p>
+          <p v-if="getOverlayList.director">Directed By {{ getOverlayList.director }}</p>
         </div>
       </div>
       <div class="page_cont_images">

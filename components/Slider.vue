@@ -73,7 +73,7 @@ onBeforeUnmount(() => {
         <p v-if="props.overlayCont.artist">
           Artist Name「{{ props.overlayCont.artist }}」
         </p>
-        <p>Directed By {{ props.overlayCont.director }}</p>
+        <p v-if="props.overlayCont.director">Directed By {{ props.overlayCont.director }}</p>
       </div>
     </div>
   </div>

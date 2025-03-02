@@ -22,6 +22,9 @@
         <li @click="changePage('/index2')">
           About
         </li>
+        <li @click="changePage('/works')">
+          ALL Works
+        </li>
       </ul>
     </div>
   </header>
@@ -108,17 +111,10 @@
         align-items: center;
         color: white;
         li {
-          margin-left: 8vw;
           position: relative;
           cursor: pointer;
-          &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 12vw;
-            height: 1px;
-            background-color: white;
+          &:not(:first-child) {
+            margin-left: 4vw;
           }
         }
       }

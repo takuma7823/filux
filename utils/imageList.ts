@@ -1,8 +1,8 @@
 export const imageList = [
   [
-    '/img/film/スタァ/1.png',
     '/img/film/スタァ/2.png',
     '/img/film/スタァ/3.png',
+    '/img/film/スタァ/1.png',
     '/img/film/スタァ/4.png',
     '/img/film/スタァ/5.png',
     '/img/film/スタァ/6.png',

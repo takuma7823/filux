@@ -1,5 +1,17 @@
 export const imageList = [
   [
+    '/img/film/声/1.png',
+    '/img/film/声/2.png',
+    '/img/film/声/3.png',
+    '/img/film/声/4.png',
+    '/img/film/声/5.png',
+    '/img/film/声/6.png',
+    '/img/film/声/7.png',
+    '/img/film/声/8.png',
+    '/img/film/声/9.png',
+    '/img/film/声/10.png',
+  ],
+  [
     '/img/film/スタァ/2.png',
     '/img/film/スタァ/3.png',
     '/img/film/スタァ/1.png',

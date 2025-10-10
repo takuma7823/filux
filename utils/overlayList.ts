@@ -1,6 +1,13 @@
 export const overlayList = [
   {
     title: 'Music Video',
+    mvTitle: 'Highway Life',
+    artist: '猫背のネイビーセゾン',
+    director: 'Kohei Yamagami',
+    youtubeId: 'VoSRpIq9qv8',
+  },
+  {
+    title: 'Music Video',
     mvTitle: '声',
     artist: 'Mitei',
     director: 'Kohei Yamagami',

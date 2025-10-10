@@ -1,5 +1,18 @@
 export const imageList = [
   [
+    '/img/film/highwaylife/1.png',
+    '/img/film/highwaylife/2.png',
+    '/img/film/highwaylife/3.png',
+    '/img/film/highwaylife/4.png',
+    '/img/film/highwaylife/5.png',
+    '/img/film/highwaylife/6.png',
+    '/img/film/highwaylife/7.png',
+    '/img/film/highwaylife/8.png',
+    '/img/film/highwaylife/9.png',
+    '/img/film/highwaylife/10.png',
+    '/img/film/highwaylife/11.png',
+  ],
+  [
     '/img/film/声/1.png',
     '/img/film/声/2.png',
     '/img/film/声/3.png',

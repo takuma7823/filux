@@ -2,6 +2,15 @@
 
   import { imageList } from '~/utils/imageList';
 
+  useHead({
+    title: 'About | filux',
+  })
+  useSeoMeta({
+    description: 'filuxについて。視覚だけでない想いを届ける映像制作チームです。',
+    ogTitle: 'About | filux',
+    ogDescription: 'filuxについて。視覚だけでない想いを届ける映像制作チームです。',
+  })
+
   definePageMeta({
     layout: false,
   })
@@ -80,7 +89,7 @@
     <header class="header">
       <div class="header_cont">
         <div class="header_cont_left">
-          <div class="header_cont_left_img" />
+          <img class="header_cont_left_img" src="@/assets/img/logo2.webp" alt="filux" />
         </div>
         <ul class="header_cont_right">
           <li @click="changePage('/')">
@@ -175,9 +184,10 @@
               ブランドのストーリーや製品の魅力をリアルに感じてもらうことで、<br>
               信頼性を高め、より強い共感を呼び起こすことができます。
             </div>
-            <div class="why_cont_exp_img" />
+            <img class="why_cont_exp_img" src="@/assets/img/why.webp" alt="何故動画を作るのか" loading="lazy" />
           </div>
           <div class="why_cont_img" data-device="sp">
+            <img src="@/assets/img/why.webp" alt="何故動画を作るのか" loading="lazy" />
             <div class="why_cont_img_txt">
               動画制作は、視覚だけでは伝えきれない感情や<br>
               メッセージを効果的に届けるための<br>強力なツールです。<br><br>
@@ -203,7 +213,7 @@
             クリエイティブ<span>×</span>データ
           </h4>
           <div class="sns_cont_exp" data-device="pc">
-            <div class="sns_cont_exp_img" />
+            <img class="sns_cont_exp_img" src="@/assets/img/management.webp" alt="SNS Management" loading="lazy" />
             <div class="sns_cont_exp_txt"> 
               クリエイティブなコンテンツ制作とデータに基づいた分析を融合させ、<br>
               効果的なSNS戦略を実現します。<br>
@@ -215,6 +225,7 @@
             </div>
           </div>
           <div class="sns_cont_img" data-device="sp">
+            <img src="@/assets/img/management.webp" alt="SNS Management" loading="lazy" />
             <div class="sns_cont_img_txt">
               クリエイティブなコンテンツ制作と<br>データに基づいた分析を融合させ、<br>
               効果的なSNS戦略を実現します。<br><br>
@@ -234,36 +245,42 @@
         <div class="partner_cont">
           <div class="partner_cont_card">
             <div class="partner_cont_card_img">
+              <img src="@/assets/img/shooting.webp" alt="Shooting" loading="lazy" />
               <div class="partner_cont_card_img_label">Shooting</div>
             </div>
             <div class="partner_cont_card_txt">カメラ/ライティング/アシスタント</div>
           </div>
           <div class="partner_cont_card">
             <div class="partner_cont_card_img">
+              <img src="@/assets/img/hairMake.webp" alt="Hair Make up/Stylist" loading="lazy" />
               <div class="partner_cont_card_img_label">Hair Make up/Stylist</div>
             </div>
             <div class="partner_cont_card_txt">ヘアメイク/スタイリスト</div>
           </div>
           <div class="partner_cont_card">
             <div class="partner_cont_card_img">
+              <img src="@/assets/img/animater.webp" alt="Animation/Illustrator" loading="lazy" />
               <div class="partner_cont_card_img_label">Animation/Illustrator</div>
             </div>
             <div class="partner_cont_card_txt">アニメーション/イラストレーター</div>
           </div>
           <div class="partner_cont_card">
             <div class="partner_cont_card_img">
+              <img src="@/assets/img/casting.webp" alt="Casting" loading="lazy" />
               <div class="partner_cont_card_img_label">Casting</div>
             </div>
             <div class="partner_cont_card_txt">キャスティング</div>
           </div>
           <div class="partner_cont_card">
             <div class="partner_cont_card_img">
+              <img src="@/assets/img/LINE.webp" alt="LINE Marketer" loading="lazy" />
               <div class="partner_cont_card_img_label">LINE Marketer</div>
             </div>
             <div class="partner_cont_card_txt">LINEマーケター</div>
           </div>
           <div class="partner_cont_card">
             <div class="partner_cont_card_img">
+              <img src="@/assets/img/HP.webp" alt="HP Production" loading="lazy" />
               <div class="partner_cont_card_img_label">HP Production</div>
             </div>
             <div class="partner_cont_card_txt">ホームページ制作</div>
@@ -426,9 +443,7 @@
           border: 1px solid black;
           width: 500px;
           height: 260px;
-          background-image: url('@/assets/img/why.jpeg');
-          background-repeat: no-repeat;
-          background-size: 600px, 220px;
+          object-fit: cover;
         }
       }
     }
@@ -470,9 +485,7 @@
           border: 1px solid white;
           width: 500px;
           height: 260px;
-          background-image: url('@/assets/img/management.jpeg');
-          background-repeat: no-repeat;
-          background-size: 600px, 220px;
+          object-fit: cover;
         }
       }
     }
@@ -502,9 +515,14 @@
           border-radius: 8px;
           width: 364px;
           height: 190px;
-          background-repeat: no-repeat;
-          background-size: 364px, 140px;
           position: relative;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+          }
           &_label {
             margin: auto;
             position: absolute;
@@ -523,36 +541,6 @@
           text-align: left;
           font-size: 1.5rem;
         }
-        &:nth-child(1) {
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/shooting.jpeg');
-          }
-        }
-        &:nth-child(2) {
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/hairMake.jpeg');
-          }
-        }
-        &:nth-child(3) {
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/animater.jpeg');
-          }
-        }
-        &:nth-child(4) {
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/casting.jpeg');
-          }
-        }
-        &:nth-child(5) {
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/LINE.jpeg');
-          }
-        }
-        &:nth-child(6) {
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/HP.jpeg');
-          }
-        }
       }
     }
   }
@@ -570,9 +558,7 @@
         &_img {
           width: 280px;
           height: 120px;
-          background-image: url('@/assets/img/logo2.png');
-          background-repeat: no-repeat;
-          background-size: 280px, 120px;
+          object-fit: contain;
         }
       }
       &_right {
@@ -751,10 +737,12 @@
         margin-top: 24vw;
         width: 100%;
         height: 80vw;
-        background-image: url('@/assets/img/why.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100%, 80vw;
         position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
         &_txt {
           padding: 0 2.4vw;
           width: 100%;
@@ -795,10 +783,12 @@
         margin-top: 12vw;
         width: 100%;
         height: 80vw;
-        background-image: url('@/assets/img/management.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100%, 80vw;
         position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
         &_txt {
           padding: 0 2.4vw;
           width: 100%;
@@ -830,10 +820,20 @@
           padding-top: 7.6vw;
           width: 100%;
           height: 24vw;
-          background-repeat: no-repeat;
-          background-size: 100%, 24vw;
           border-radius: 8px;
+          position: relative;
+          overflow: hidden;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+          }
           &_label {
+            position: relative;
             font-size: 2.4rem;
             color: white;
             font-weight: bold;
@@ -845,34 +845,6 @@
         }
         &:nth-child(1) {
           margin-top: 0;
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/shooting.jpeg');
-          }
-        }
-        &:nth-child(2) {
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/hairMake.jpeg');
-          }
-        }
-        &:nth-child(3) {
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/animater.jpeg');
-          }
-        }
-        &:nth-child(4) {
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/casting.jpeg');
-          }
-        }
-        &:nth-child(5) {
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/LINE.jpeg');
-          }
-        }
-        &:nth-child(6) {
-          .partner_cont_card_img {
-            background-image: url('@/assets/img/HP.jpeg');
-          }
         }
       }
     }
@@ -891,9 +863,7 @@
         &_img {
           width: 40vw;
           height: 15vw;
-          background-image: url('@/assets/img/logo2.png');
-          background-repeat: no-repeat;
-          background-size: contain;
+          object-fit: contain;
         }
       }
       &_right {

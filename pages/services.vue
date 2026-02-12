@@ -1,5 +1,12 @@
 <script lang="ts" setup>
-
+useHead({
+  title: 'Services | filux',
+})
+useSeoMeta({
+  description: 'filuxのサービス内容。ヒアリングから企画・撮影・編集・運用まで、映像制作をワンストップで提供します。',
+  ogTitle: 'Services | filux',
+  ogDescription: 'filuxのサービス内容。ヒアリングから企画・撮影・編集・運用まで、映像制作をワンストップで提供します。',
+})
 </script>
 
 <template>
@@ -66,9 +73,10 @@
             コミュニケーションを通じて、<br>
             理想の動画を形にするための土台を築きます。
           </div>
-          <div class="hearing_cont_exp_img" />
+          <img class="hearing_cont_exp_img" src="@/assets/img/hearing.webp" alt="ヒアリング" loading="lazy" />
         </div>
         <div class="hearing_cont_img" data-device="sp">
+          <img src="@/assets/img/hearing.webp" alt="ヒアリング" loading="lazy" />
           <div class="hearing_cont_img_txt">
             まずお客様との丁寧なヒアリングを行い、<br>
             ニーズや目的をしっかりと把握します。<br>
@@ -90,7 +98,7 @@
           企画
         </h4>
         <div class="proposal_cont_exp" data-device="pc">
-          <div class="proposal_cont_exp_img" />
+          <img class="proposal_cont_exp_img" src="@/assets/img/proposal.webp" alt="企画" loading="lazy" />
           <div class="proposal_cont_exp_txt"> 
             ヒアリングで得た情報をもとに、具体的な企画を立案します。<br>
             お客様の目的やターゲットに合わせたストーリー構成、演出、<br>
@@ -104,6 +112,7 @@
           </div>
         </div>
         <div class="proposal_cont_img" data-device="sp">
+          <img src="@/assets/img/proposal.webp" alt="企画" loading="lazy" />
           <div class="proposal_cont_img_txt">
             ヒアリングで得た情報をもとに、<br>具体的な企画を立案します。<br>
             お客様の目的やターゲットに合わせたストーリー構成、演出、
@@ -138,9 +147,10 @@
             撮影中もお客様と密に連携を取りながら、<br>
             スムーズな進行を心がけています。
           </div>
-          <div class="shooting_cont_exp_img" />
+          <img class="shooting_cont_exp_img" src="@/assets/img/shoot.webp" alt="撮影" loading="lazy" />
         </div>
         <div class="shooting_cont_img" data-device="sp">
+          <img src="@/assets/img/shoot.webp" alt="撮影" loading="lazy" />
           <div class="shooting_cont_img_txt">
             企画が決まれば、<br>プロフェッショナルな撮影チームが<br>
             最新の機材を用いて映像を撮影します。<br>
@@ -164,7 +174,7 @@
           編集
         </h4>
         <div class="edit_cont_exp" data-device="pc">
-          <div class="edit_cont_exp_img" />
+          <img class="edit_cont_exp_img" src="@/assets/img/edit.webp" alt="編集" loading="lazy" />
           <div class="edit_cont_exp_txt"> 
             撮影後、編集チームが映像を一貫して仕上げます。<br>
             映像編集はただカットするだけではなく、ストーリー性を強調し、<br>
@@ -175,6 +185,7 @@
           </div>
         </div>
         <div class="edit_cont_img" data-device="sp">
+          <img src="@/assets/img/edit.webp" alt="編集" loading="lazy" />
           <div class="edit_cont_img_txt">
             撮影後、編集チームが映像を一貫して仕上げます。<br>
             映像編集はただカットするだけではなく、<br>
@@ -207,9 +218,10 @@
             インタラクションの管理により、ブランドの存在感を高め、<br>
             視聴者とのエンゲージメントを強化します。
           </div>
-          <div class="management_cont_exp_img" />
+          <img class="management_cont_exp_img" src="@/assets/img/management.webp" alt="運用" loading="lazy" />
         </div>
         <div class="management_cont_img" data-device="sp">
+          <img src="@/assets/img/management.webp" alt="運用" loading="lazy" />
           <div class="management_cont_img_txt">
             動画制作後の運用は、コンテンツが最大限の効果を発揮するために<br>
             重要なステップです。当社では、SNS運用や広告配信などを含む<br>
@@ -316,9 +328,7 @@
           border: 1px solid white;
           width: 500px;
           height: 260px;
-          background-image: url('@/assets/img/hearing.jpeg');
-          background-repeat: no-repeat;
-          background-size: 600px, 220px;
+          object-fit: cover;
         }
       }
     }
@@ -353,9 +363,7 @@
           border: 1px solid black;
           width: 500px;
           height: 260px;
-          background-image: url('@/assets/img/proposal.jpeg');
-          background-repeat: no-repeat;
-          background-size: 600px, 220px;
+          object-fit: cover;
         }
       }
     }
@@ -391,9 +399,7 @@
           border: 1px solid white;
           width: 500px;
           height: 260px;
-          background-image: url('@/assets/img/shoot.jpeg');
-          background-repeat: no-repeat;
-          background-size: 600px, 220px;
+          object-fit: cover;
         }
       }
     }
@@ -428,9 +434,7 @@
           border: 1px solid black;
           width: 500px;
           height: 260px;
-          background-image: url('@/assets/img/edit.jpeg');
-          background-repeat: no-repeat;
-          background-size: 600px, 220px;
+          object-fit: cover;
         }
       }
     }
@@ -466,9 +470,7 @@
           border: 1px solid white;
           width: 500px;
           height: 260px;
-          background-image: url('@/assets/img/management.jpeg');
-          background-repeat: no-repeat;
-          background-size: 600px, 220px;
+          object-fit: cover;
         }
       }
     }
@@ -559,10 +561,12 @@
         margin-top: 10vw;
         width: 100%;
         height: 54vw;
-        background-image: url('@/assets/img/hearing.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100%, 80vw;
         position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
         &_txt {
           padding: 0 2.4vw;
           width: 100%;
@@ -598,10 +602,12 @@
         margin-top: 10vw;
         width: 100%;
         height: 68vw;
-        background-image: url('@/assets/img/proposal.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100%, 80vw;
         position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
         &_txt {
           padding: 0 2.4vw;
           width: 100%;
@@ -637,10 +643,12 @@
         margin-top: 10vw;
         width: 100%;
         height: 68vw;
-        background-image: url('@/assets/img/shoot.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100%, 80vw;
         position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
         &_txt {
           padding: 0 2.4vw;
           width: 100%;
@@ -676,10 +684,12 @@
         margin-top: 4vw;
         width: 100%;
         height: 70vw;
-        background-image: url('@/assets/img/edit.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100%, 80vw;
         position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
         &_txt {
           padding: 0 2.4vw;
           width: 100%;
@@ -715,10 +725,12 @@
         margin-top: 12vw;
         width: 100%;
         height: 80vw;
-        background-image: url('@/assets/img/management.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100%, 80vw;
         position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
         &_txt {
           padding: 0 2.4vw;
           width: 100%;

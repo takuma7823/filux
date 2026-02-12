@@ -1,6 +1,15 @@
 <script lang="ts" setup>
   import { youtubeIds } from '~/utils/youtubeIds';
 
+  useHead({
+    title: 'Works | filux',
+  })
+  useSeoMeta({
+    description: 'filuxの制作実績。インタビュー・MV・WEB広告・プロモーション・短編映画・ライブ映像を掲載しています。',
+    ogTitle: 'Works | filux',
+    ogDescription: 'filuxの制作実績。インタビュー・MV・WEB広告・プロモーション・短編映画・ライブ映像を掲載しています。',
+  })
+
   definePageMeta({
     layout: false,
   })
@@ -66,7 +75,7 @@
     <header class="header">
       <div class="header_cont">
         <div class="header_cont_left">
-          <div class="header_cont_left_img" />
+          <img class="header_cont_left_img" src="@/assets/img/logo2.webp" alt="filux" />
         </div>
         <ul class="header_cont_right">
           <li @click="changePage('/')">
@@ -159,7 +168,7 @@
         </div>
       </div>
       <div class="sns_cont">
-        <div class="sns_cont_img1" />
+        <img class="sns_cont_img1" src="@/assets/img/tiktok.webp" alt="TikTok運用事例" loading="lazy" />
         <div class="sns_cont_wrapper"> 
           <div class="sns_cont_wrapper_ttl">
             <span>Tik Tok</span>運用
@@ -171,7 +180,7 @@
         </div>
       </div>
       <div class="sns_cont">
-        <div class="sns_cont_img2" />
+        <img class="sns_cont_img2" src="@/assets/img/instagram.webp" alt="Instagramリール動画運用事例" loading="lazy" />
         <div class="sns_cont_wrapper"> 
           <div class="sns_cont_wrapper_ttl">
             <span>Instagram</span>リール動画運用
@@ -320,16 +329,12 @@
       &_img1 {
         width: 300px;
         height: 120px;
-        background-image: url('@/assets/img/tiktok.jpeg');
-        background-repeat: no-repeat;
-        background-size: 300px 120px;
+        object-fit: cover;
       }
       &_img2 {
         width: 300px;
         height: 120px;
-        background-image: url('@/assets/img/instagram.jpeg');
-        background-repeat: no-repeat;
-        background-size: 300px 120px;
+        object-fit: cover;
       }
       span {
         font-weight: bold;
@@ -350,9 +355,7 @@
         &_img {
           width: 280px;
           height: 120px;
-          background-image: url('@/assets/img/logo2.png');
-          background-repeat: no-repeat;
-          background-size: 280px, 120px;
+          object-fit: contain;
         }
       }
       &_right {
@@ -516,16 +519,12 @@
         border: 1px solid white;
         width: 100%;
         height: 30vw;
-        background-image: url('@/assets/img/tiktok.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100% 30vw;
+        object-fit: cover;
       }
       &_img2 {
         width: 100%;
         height: 36vw;
-        background-image: url('@/assets/img/instagram.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100% 36vw;
+        object-fit: cover;
       }
     }
   }
@@ -543,9 +542,7 @@
         &_img {
           width: 40vw;
           height: 15vw;
-          background-image: url('@/assets/img/logo2.png');
-          background-repeat: no-repeat;
-          background-size: contain;
+          object-fit: contain;
         }
       }
       &_right {

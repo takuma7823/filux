@@ -8,23 +8,54 @@ definePageMeta({
 
 const route = useRoute()
 const router = useRouter()
-const id = ref(route.params.id)
 
-const changePage = (id: string) => {
-  router.push(id)
+const id = Number(route.params.id)
+
+if (isNaN(id) || !Number.isInteger(id) || id < 0 || id >= imageList.length) {
+  throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
+}
+
+const changePage = (path: string) => {
+  router.push(path)
 }
 
 const getTopImage = computed(() => {
-  return imageList[Number(id.value)][0]
+  return imageList[id][0]
 })
 
 const getImages = computed(() => {
-  const FilteredImages = imageList[Number(id.value)].slice(1)
-  return FilteredImages
+  return imageList[id].slice(1)
 })
 
 const getOverlayList = computed(() => {
-  return overlayList[Number(id.value)]
+  return overlayList[id]
+})
+
+const pageTitle = computed(() => {
+  const overlay = overlayList[id]
+  const parts = [overlay.mvTitle]
+  if (overlay.artist) {
+    parts.push(overlay.artist)
+  }
+  return `${parts.join(' - ')} | filux`
+})
+
+const pageDescription = computed(() => {
+  const overlay = overlayList[id]
+  let desc = `${overlay.artist ? overlay.artist + '「' + overlay.mvTitle + '」' : '「' + overlay.mvTitle + '」'}の${overlay.title}。`
+  if (overlay.director) {
+    desc += `Directed by ${overlay.director}`
+  }
+  return desc
+})
+
+useHead({
+  title: pageTitle,
+})
+useSeoMeta({
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
 })
 </script>
 
@@ -33,7 +64,7 @@ const getOverlayList = computed(() => {
     <header class="header">
       <div class="header_cont">
         <div class="header_cont_left">
-          <div class="header_cont_left_img" />
+          <img class="header_cont_left_img" src="@/assets/img/logo2.webp" alt="filux" />
         </div>
         <ul class="header_cont_right">
           <li @click="changePage('/')">
@@ -190,9 +221,7 @@ const getOverlayList = computed(() => {
         &_img {
           width: 280px;
           height: 120px;
-          background-image: url('@/assets/img/logo2.png');
-          background-repeat: no-repeat;
-          background-size: 280px, 120px;
+          object-fit: contain;
         }
       }
       &_right {
@@ -315,9 +344,7 @@ const getOverlayList = computed(() => {
         &_img {
           width: 40vw;
           height: 15vw;
-          background-image: url('@/assets/img/logo2.png');
-          background-repeat: no-repeat;
-          background-size: contain;
+          object-fit: contain;
         }
       }
       &_right {

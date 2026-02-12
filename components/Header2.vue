@@ -12,7 +12,7 @@
   <header class="header">
     <div class="header_cont">
       <div class="header_cont_left">
-        <div class="header_cont_left_img" />
+        <img class="header_cont_left_img" src="@/assets/img/logo.webp" alt="filux" />
       </div>
       <ul class="header_cont_right">
         <li @click="changePage('/')">
@@ -49,9 +49,7 @@
         &_img {
           width: 212px;
           height: 71px;
-          background-image: url('@/assets/img/logo.jpg');
-          background-repeat: no-repeat;
-          background-size: 140px, 36px;
+          object-fit: contain;
         }
       }
       &_right {
@@ -98,9 +96,7 @@
         &_img {
           width: 30vw;
           height: 18vw;
-          background-image: url('@/assets/img/logo.jpg');
-          background-repeat: no-repeat;
-          background-size: 30vw, 18vw;
+          object-fit: contain;
         }
       }
       &_right {

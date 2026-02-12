@@ -81,7 +81,7 @@ useSeoMeta({
     </header>
     <div class="page_cont">
       <div class="page_cont_top">
-        <img :src="getTopImage">
+        <img :src="getTopImage" loading="eager">
       </div>
       <div class="page_cont_label">
         <div class="page_cont_label_border">
@@ -99,7 +99,7 @@ useSeoMeta({
           :key="index"
           class="page_cont_images_image"
         >
-          <img :src="image">
+          <img :src="image" loading="lazy">
         </div>
       </div>
       <div v-if="getOverlayList.youtubeId" class="page_cont_youtube">

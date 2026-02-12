@@ -58,6 +58,7 @@ onBeforeUnmount(() => {
       :src="image"
       :class="{ 'active': index === currentIndex, 'inactive': index !== currentIndex }"
       class="slide-image"
+      loading="lazy"
     />
 
     <!-- マウスオーバー時に表示するオーバーレイ -->

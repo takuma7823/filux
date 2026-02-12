@@ -1,4 +1,13 @@
 <script lang="ts" setup>
+  useHead({
+    title: 'filux | 動画制作',
+  })
+  useSeoMeta({
+    description: 'filuxは映像制作チームです。MV・プロモーション映像・広告映像など、企画から運用までワンストップで対応します。',
+    ogTitle: 'filux | 動画制作',
+    ogDescription: 'filuxは映像制作チームです。MV・プロモーション映像・広告映像など、企画から運用までワンストップで対応します。',
+  })
+
   const videoPlayer = ref<HTMLVideoElement | null>(null)
 
   onMounted(() => {

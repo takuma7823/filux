@@ -1,7 +1,16 @@
 <script lang="ts" setup>
-  
+
 import { imageList } from '~/utils/imageList'
 import { overlayList } from '~/utils/overlayList'
+
+useHead({
+  title: 'Film | filux',
+})
+useSeoMeta({
+  description: 'filuxの映像作品一覧。ミュージックビデオ・プロモーション映像などのポートフォリオをご覧いただけます。',
+  ogTitle: 'Film | filux',
+  ogDescription: 'filuxの映像作品一覧。ミュージックビデオ・プロモーション映像などのポートフォリオをご覧いただけます。',
+})
 
 const router = useRouter()
 
